@@ -1474,7 +1474,7 @@ ul.general-list .box-list {
 }
 
 .btn-primary, .btn-primary:hover, .btn, .btn:hover {
-    background-color: #ccc !important;
+    background-color: #eee !important;
     direction:rtl;
     text-align: right;
     padding-left:20px;
