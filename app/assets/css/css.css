@@ -1044,18 +1044,26 @@ input.form-control:disabled {
     top: 0;
     z-index: 1;
 }*/
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+    background-color: #fff;
+    width: 560px;
+
+}
+.ngdialog.ngdialog-theme-default .ngdialog-close{
+    left:34px;
+    right: unset;
+}
 
 .popup {
     box-sizing: border-box;
     padding: 52px 52px 14px 16px;
     font-family: almoni-dl-aaa-400;
     font-size: 20px;
-    border: 2px solid #dee2e5;
+    /*border: 2px solid #dee2e5;*/
     border-radius: 4px;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 10;
     color: #4b5657;
-    background-color: #fff;
     direction: rtl;
     text-align: right;
 }
