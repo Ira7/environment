@@ -1215,7 +1215,7 @@ border-color: rgba(250, 251, 252, 0);
     }*/
 
     .general-form .formly-field .control-label {
-        font-size: 24px;
+        font-size: 0px;
         font-family: almoni-dl-aaa-400;
         /*padding-bottom: 19px;*/
         padding-top: 20px;
