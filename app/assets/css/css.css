@@ -141,7 +141,7 @@ header {
     header h2 {
         display: block;
         background-color: #6b5953;
-        height: 99px;
+        height: 90px;
         color: #fff;
         font-family: almoni-dl-aaa-400;
         box-sizing: border-box;
@@ -161,9 +161,9 @@ header {
 /*.content {
     padding: 88px 184px 10px;
 }*/
-.container-fluid {
+/*.container-fluid {
     padding: 0 154px;
-}
+}*/
 
 .content .title {
     font-size: 18px;
@@ -306,8 +306,9 @@ footer {
 header.header-info h2 {
     padding-top: 0;
     /*margin: -41px -184px 0;*/
-    margin-top:-41px;
-    margin-right: 20px;
+    margin-top:-35px;
+    /*margin-right: 20px;*/
+    padding-right:0;
     height: 22px;
 }
 
@@ -321,17 +322,18 @@ header h2.high {
 }
 
     header h2.high .sub_nav {
-        height: 79px;
-        position: absolute;
-        bottom: 0;
-        background: url(../imgs/sub_nav_bg.jpg) repeat-x;
-        margin: 0 auto;
-        box-sizing: border-box;
+          height: 70px;
+    margin-top: -29px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background: url(../imgs/sub_nav_bg.jpg) repeat-x;
+    /* margin: 0 auto; */
+    /* box-sizing: border-box; */
     }
 
 
         header h2.high .sub_nav li {
-            height: 79px;
+            height: 70px;
             float: right;
             color: #f89d34;
             font-size: 20px;
@@ -972,9 +974,9 @@ input.form-control:disabled {
     margin-bottom: 0;
 }
 
-.ui-select-multiple.ui-select-bootstrap {
+/*.ui-select-multiple.ui-select-bootstrap {
     padding: 0;
-}
+}*/
 
 .form .cols {
     width: 45%;
@@ -1193,11 +1195,11 @@ border-color: rgba(250, 251, 252, 0);
     }
 
     .general-form .formly-field {
-        margin-bottom:17px;
+        /*margin-bottom:17px;*/
         clear:both;
-
-
+          background-color: #fafbfc;  
     }
+
     /*.general-form .formly-field:before {
         content: url(../icons/corner.png);
         position: absolute;
@@ -1460,3 +1462,8 @@ ul.general-list .box-list {
 
     .general-form .uib-datepicker-popup.dropdown-menu.ng-scope {
     }
+
+.top-nav{
+    top:-2px;
+    height:70px;
+}

@@ -1,12 +1,17 @@
 ﻿
+<div class="row">
 
+    <div class="col-xs-10 col-xs-offset-1">
     <header class="header-info">
         <h2 class="high">
-            <div class="info">
+            <div class="row info">
+
                 <ul>
                     <li ng-repeat="title in ::vm.schema track by $index" ng-if="vm.model[title.name]"><span >{{title.header}}:</span>&nbsp;<i>{{vm.model[title.name]}}</i></li>
                 </ul>
            </div>
 </h2>
 </header>
+</div>
 
+</div>
