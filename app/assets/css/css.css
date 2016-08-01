@@ -992,7 +992,7 @@ input.form-control:disabled {
     }
 
 .form .buttons {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     bottom: 36px;
     left: 54px;
