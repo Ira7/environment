@@ -852,6 +852,7 @@ li.nav-7 {
     border-radius: 4px;
     position: absolute;
     z-index: 10;
+        width: 82%;
 }
 
     .form h4 {
@@ -921,7 +922,7 @@ li.nav-7 {
     
     border: 0 none !important;
     float: right !important;
-    height: 30px !important;
+    /*height: 30px !important;*/
     
     /*padding-bottom: 2px !important;*/
     margin-right: 3px !important;
