@@ -409,8 +409,11 @@ table.zebra, table.zebra_b {
     }
 
 .footer-nav {
-    float: left;
-    margin-top: -100px;
+   width: 60%;
+}
+
+.footer-nav button {
+  float:left;
 }
 
 .add-button {
@@ -1132,6 +1135,7 @@ input.form-control:disabled {
         margin-bottom: 0;
         width: 60%;
         border-radius: 4px;
+        margin-bottom:2%;
         border: 2px solid #e6eaee;
         /*box-shadow: 0 0 2px rgba(0,0,0,0.28);*/
         /*padding: 20px 28px;*/
@@ -1334,7 +1338,7 @@ ul.general-list .box-list {
         background-color: #534540 !important;
     }
 
-.general-form input.ng-valid-maxlength, .general-form input.ng-valid-date {
+.general-form input {
     border: 0 none;
     border-bottom: 1px solid #4b5657;
     font-size: 16px;
@@ -1370,6 +1374,7 @@ ul.general-list .box-list {
     position: relative;
     right: 405px;
     bottom: 48px;
+    color:grey;
 }
 .general-form button.pull-right i, .general-form button.pull-left i {
     color:#f79d34;
@@ -1402,7 +1407,7 @@ ul.general-list .box-list {
     color: #4d5759;
 }
 
-    .general-form .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover, .general-form .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover span {
+    .general-form .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover{
         background-color: #f79d34 !important;
         color: #fff !important;
         font-family: almoni-dl-aaa-400;
@@ -1466,4 +1471,12 @@ ul.general-list .box-list {
 .top-nav{
     top:-2px;
     height:70px;
+}
+
+.btn-primary, .btn-primary:hover, .btn, .btn:hover {
+    background-color: #ccc !important;
+    direction:rtl;
+    text-align: right;
+    padding-left:20px;
+    padding-top:5px;
 }
