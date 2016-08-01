@@ -1,0 +1,42 @@
+﻿<div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+    <section class="content clearfix">
+        <p class="title">נא לבחור אתר סביבתי להגשת בקשה להיתר</p>
+        <ul class="sites">
+            <li ng-repeat="site in vm.list track by $index">
+                <div>
+                    <h3 ng-bind="site.EnvironmentSiteName"></h3>
+                    <div class="details">
+                        <div ng-repeat="item in ::vm.model.siteSchema track by $index">
+                           
+                            <span class="id_site">
+                                <strong ng-bind="item.header"></strong>&nbsp;<i title="{{site[item.name]}}" ng-bind="site[item.name]"></i>
+                            </span>
+                        </div>
+                        <button title="המשך" alt="המשך" ng-class="{'disable': site.PermitStatus === 1}" ng-click="vm.changState(site)">המשך</button> 
+                    </div>
+                   
+                </div>
+            </li>
+          
+        </ul>
+
+    </section>
+
+
+
+
+
+       <!--<div class="row" ng-repeat="site in ::vm.list">
+            <span class="col-lg-3 sitesDetails" ng-click="vm.changState(site)">
+                <div ng-repeat="item in ::vm.model.siteSchema">
+                 <lable style="font-weight:bold">{{item.header}}</lable>
+                 <span ng-bind="site[item.name]"></span>
+
+                </div>
+  </span>
+            </div>
+         
+        </div>--> 
+  </div>
+    </div>

@@ -1,0 +1,147 @@
+.listContainer
+{
+    padding-top:20px;
+}
+.header-row
+{
+    font-weight:bold;
+}
+.formly-field {
+  margin-bottom: 16px;
+}
+
+.validation {
+  color: #a94442;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.ngdialog.notWork
+{
+    margin-top:20px !important;
+}
+
+.sitesDetails:hover, .sitesDetails:active{
+   background-color:grey;
+   color: white;
+   opacity: 0.6;
+    width: 50%;
+}
+.sitesDetails{
+    margin-bottom: 15px;
+    width: 50%;
+}
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.loading-content {
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    /*background-color: #f1c40f;*/
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11;
+    /* 1px higher than the overlay layer */
+}
+.msg-print{
+    font-weight:bold;
+      padding-bottom: 8px;
+}
+.sign {
+    font-weight:bold; 
+}
+.sign span {
+    width:4cm;
+    border-bottom:0.1em solid #000;
+    display:inline-block;
+    margin-left:8px;
+}
+.section-sign{
+margin-bottom: 15px;
+}
+
+@media print
+{
+    #footer {
+         display: block; 
+         position: fixed; 
+         bottom: 0;
+    }
+    @media print {
+      .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+      .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+           float: left;               
+      }
+
+      .col-sm-12 {
+           width: 100%;
+      }
+
+      .col-sm-11 {
+           width: 91.66666666666666%;
+      }
+
+      .col-sm-10 {
+           width: 83.33333333333334%;
+      }
+
+      .col-sm-9 {
+            width: 75%;
+      }
+
+      .col-sm-8 {
+            width: 66.66666666666666%;
+      }
+
+       .col-sm-7 {
+            width: 58.333333333333336%;
+       }
+
+       .col-sm-6 {
+            width: 50%;
+       }
+
+       .col-sm-5 {
+            width: 41.66666666666667%;
+       }
+
+       .col-sm-4 {
+            width: 33.33333333333333%;
+       }
+
+       .col-sm-3 {
+            width: 25%;
+       }
+
+       .col-sm-2 {
+              width: 16.666666666666664%;
+       }
+
+       .col-sm-1 {
+              width: 8.333333333333332%;
+        }            
+} 
+}
+.errorText{
+    color:red;
+}
+.moe-info-message{
+    min-height:200px;
+    width:100%;
+    border:1px solid grey;
+    text-align:center;
+    padding-top: 30px;
+}

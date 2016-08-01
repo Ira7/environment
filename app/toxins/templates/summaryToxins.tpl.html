@@ -1,0 +1,12 @@
+﻿    <section class="tbl">
+        <h4>סיכום הבקשה שהוזנה</h4>
+        <div class="table send">
+            <ul>
+                <li class="done" ng-repeat="item in ::vm.schema  | filter: {stepListSchema:  '!!' }  track by $index ">
+                    <a ng-if="!item.titlePerform" href="javascript:void(0)" ng-click="vm.changeState(item.stepName)">  {{vm.data[item.listKey].length || 0}} {{item.stepTitle}}</a>
+                    <a ng-if="item.titlePerform" href="javascript:void(0)" ng-click="vm.changeState(item.stepName)">  {{vm.data["section_permitPestControl"].length + vm.data["section_permitBondedWarehousePortLabs"].length + vm.data["section_permitMaterialsTransportation"].length || 0}} {{item.stepTitle}}</a>
+                </li>
+               
+            </ul>
+        </div>
+    </section>

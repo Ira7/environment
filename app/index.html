@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ipapp">
+
+<head>
+    <title>פורטל תעשייה | המשרד להגנת הסביבה </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link href="app.less" type="text/css" rel="stylesheet/less" /> -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.css" rel="stylesheet" />
+
+    <link href="../bower_components/angular-loading-bar/build/loading-bar.css" rel="stylesheet" />
+    <link href="../bower_components/bootstrap-sidebar/dist/css/sidebar.css" rel="stylesheet" />
+    <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../bower_components/ng-dialog/css/ngDialog-theme-default.css" rel="stylesheet" />
+    <link href="../bower_components/ng-dialog/css/ngDialog-theme-plain.css" rel="stylesheet" />
+    <link href="../bower_components/ng-dialog/css/ngDialog.css" rel="stylesheet" />
+    <link href="../bower_components/ui-select/dist/select.css" rel="stylesheet" />
+    <link href="../bower_components/angular-toastr/dist/angular-toastr.css" rel="stylesheet" />
+    <!-- <link href="../bower_components/ngtoast/dist/ngToast.css" rel="stylesheet"/>-->
+    <link href="../bower_components/toastr/toastr.css" rel="stylesheet" />
+
+    <!--<link href="../bower_components/select2/select2.css" rel="stylesheet" />-->
+    <!--<link href="../bower_components/nvd3/build/nv.d3.css" rel="stylesheet" />-->
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/moe-style.css" rel="stylesheet" />
+
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link href="assets/css/css.css" rel="stylesheet" />
+    <!--link href="assets/css/font-awesome.min.css" rel="stylesheet">-->
+
+    <link href="assets/css/moeForm-dialog-theme-plain.css" rel="stylesheet" />
+    <link href="assets/css/moePrint-dialog-theme-plain.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <section class="wrapper clearfix">
+        <div ui-view>
+            <!-- Content loads here -->
+        </div>
+    </section>
+    <!-- Scripts for development only (stripped during dist build) -->
+    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+    <!--<script src="../bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>-->
+    <!-- JS from Bower Components -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/moment/locale/he.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-i18n/angular-locale_he-il.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/ui-select/dist/select.js"></script>
+
+    <!--<script src="../bower_components/select2/select2.js"></script>
+    <script src="../bower_components/angular-ui-select2/src/select2.js"></script>
+    <script src="../bower_components/angular-ui-select3/src/select3.js"></script>-->
+
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="../bower_components/angular-PubSub/src/angular-pubsub.js"></script>
+    <script src="../bower_components/angular-logex/dist/log-ex-unobtrusive.js"></script>
+    <script src="../bower_components/angular-moment/angular-moment.js"></script>
+    <script src="../bower_components/angular-i18n/angular-locale_he-il.js"></script>
+    <script src="../bower_components/ng-dialog/js/ngDialog.js"></script>
+    <!--<script src="../bower_components/angular-toastr/dist/angular-toastr.js"></script>
+    <script src="../bower_components/ngtoast/dist/ngToast.js"></script>
+    <script src="../bower_components/AngularJS-Toaster/toaster.js"></script>-->
+    <!-- angular-formly -->
+    <script src="../bower_components/api-check/dist/api-check.js"></script>
+    <script>apiCheck.globalConfig.disabled = false; //production set to true</script>
+    <script src="../bower_components/angular-formly/dist/formly.js"></script>
+    <script src="../bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+    <script src="../bower_components/toastr/toastr.js"></script>
+
+    <!-- for nvd3 charts -->
+    <!--<script src="../bower_components/d3/d3.js"></script>-->
+    <!--<script src="../bower_components/nvd3/build/nv.d3.js"></script>-->
+    <!--<script src="../bower_components/angular-nvd3/dist/angular-nvd3.js"></script>-->
+    <!-- Add New Bower Component JS Above -->
+    <!--  moe-environmentConst - environment variables -->
+    <script src="config.js"></script>
+
+    <!-- Main App JS -->
+    <script src="app.js"></script>
+
+    <!-- common -->
+    <script src="common/common.module.js"></script>
+    <script src="common/controllers/common-controller.js"></script>
+    <!-- common services -->
+    <script src="common/services/common-service.js"></script>
+    <script src="common/services/data/data-service.js"></script>
+    <script src="common/services/message/message-service.js"></script>
+    <script src="common/services/moe-lookup/moe-lookup.service.js"></script>
+    <script src="common/services/moe-read-file/moe-read-file.service.js"></script>
+    <script src="common/services/moe-read-file/xml2json.js"></script>
+
+    <script src="common/directives/message-panel/message-panel.directive.js"></script>
+    <script src="common/directives/moe-wizard/moe-wizard.directive.js"></script>
+    <script src="common/directives/moe-wizard-steps/moe-wizard-steps.directive.js"></script>
+    <script src="common/directives/moe-wizard-footer/moe-wizard-footer.directive.js"></script>
+    <script src="common/directives/moe-page-header/moe-page-header.directive.js"></script>
+    <script src="common/directives/moe-list/moe-list.directive.js"></script>
+    <script src="common/directives/moe-test-ws/moe-test-ws.directive.js"></script>
+    <!--<script src="common/directives/moe-print/moe-print.directive.js"></script>-->
+    <script src="common/directives/moe-wizard-content/moe-wizard-content.directive.js"></script>
+    <script src="common/directives/moe-summary/moe-summary.directive.js"></script>
+
+    <!-- moe-form -->
+    <script src="moe-form/moe-form.module.js"></script>
+    <script src="moe-form/directives/moe-form/moe-form.directive.js"></script>
+    <script src="moe-form/directives/moe-read-file/moe-read-file.directive.js"></script>
+
+    <!-- auth -->
+    <script src="auth/auth.module.js"></script>
+    <script src="auth/services/auth/auth.service.js"></script>
+    <script src="auth/services/auth-interceptor/auth-interceptor.service.js"></script>
+    <script src="auth/directives/signup/signup.directive.js"></script>
+    <script src="auth/directives/auth-container/auth-container.directive.js"></script>
+    <script src="auth/directives/signin/signin.directive.js"></script>
+
+    <!-- shell -->
+    <script src="shell/shell.module.js"></script>
+    <script src="shell/controllers/shell.controller.js"></script>
+
+    <!-- nav -->
+    <script src="nav/nav.module.js"></script>
+    <script src="nav/directives/nav-public/nav-public.directive.js"></script>
+    <script src="nav/directives/nav-private/nav-private.directive.js"></script>
+
+    <!-- help -->
+    <script src="help/help.module.js"></script>
+    <script src="help/controllers/help-controller.js"></script>
+    <script src="help/services/help-service.js"></script>
+
+    <!-- home -->
+    <script src="home/home.module.js"></script>
+    <script src="home/controllers/home-controller.js"></script>
+    <script src="home/services/home-service.js"></script>
+
+    <!-- sidenav -->
+    <script src="sidenav/sidenav.module.js"></script>
+    <script src="sidenav/directives/sidenav/sidenav.directive.js"></script>
+
+    <!-- toxins -->
+    <script src="toxins/toxins.module.js"></script>
+    <script src="toxins/services/toxins-services/toxins-service.service.js"></script>
+    <script src="toxins/directives/moe-toxins-container/moe-toxins-container.directive.js"></script>
+
+
+    <!--moe-dialog-->
+    <script src="moe-dialog/moe-dialog.module.js"></script>
+    <script src="moe-dialog/services/moe-dialog/moe-dialog.service.js"></script>
+
+    <script src="common/filters/moeLookupKey2value/moeLookupKey2value.filter.js"></script>
+    <!--moe-sites-->
+    <script src="moe-sites/moe-sites.module.js"></script>
+    <script src="moe-sites/directives/moe-sites/moe-sites.directive.js"></script>
+    <script src="moe-sites/services/moe-sites/moe-sites.service.js"></script>
+    <!--<script src="moe-sites/directives/moe-site-item/moe-site-item.directive.js"></script>-->
+    <script src="common/filters/moeLookupKey2value/moeLookupKey2value.filter.js"></script>
+    <script src="common/filters/moeRadioKey2value/moeRadioKey2value.filter.js"></script>
+    <script src="common/directives/moe-print-for-dev/moe-print-for-dev.directive.js"></script>
+    <script src="shell/services/moe-load-metadata/moe-load-metadata.service.js"></script>
+    <script src="shell/directives/moe-shell-container/moe-shell-container.directive.js"></script>
+    <script src="common/directives/moe-loading/moe-loading.directive.js"></script>
+
+    <script src="moe-sites/directives/moe-header-sites/moe-header-sites.directive.js"></script>
+    <!-- Add New Component JS Above -->
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+﻿<section class="content clearfix">
+    <div ng-include src="vm.summaryTemplate"></div>
+    <section class="tbl">
+        <h4>דיווח הבקשה שהוזנה למשרד להגנת הסביבה</h4>
+        <div class="table send">
+            <ul>
+                <li class="exclamation"><span>בעת לחיצה על שליחה אני מאשר/ת את שלמות הבקשה</span></li>
+            </ul>
+            <button ng-disabled="vm.isDisableButton" ng-click="vm.onClickSubmit()">שליחה</button>
+        </div>
+    </section>
+    <pre dir="ltr">{{ vm.dataTest | json}}</pre>
+    
+</section>

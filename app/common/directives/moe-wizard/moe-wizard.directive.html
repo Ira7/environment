@@ -1,0 +1,9 @@
+<div>
+
+    <div ui-view="wizardStepsView" class="wizard-steps-view"></div>
+    <div ui-view="wizardContentView" class="wizard-content-view" ng-if="vm.model.step !== null"> </div>
+    <div ui-view="wizardFooterView" class="wizard-Footer-view" ng-if="vm.isDisplay()" ></div>
+   
+
+    <!--<pre dir="ltr">moe-wizard: {{vm|json}}   </pre>-->
+</div>

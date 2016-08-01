@@ -1,0 +1,57 @@
+﻿
+<div class="container">
+    <div class="row e-login-logorow e-center ">
+        <div class="col-lg-12 col-md-12">
+            <div class="col-md-12 col-lg-12 col-sm-12 ">
+                <img src="assets/imgs/favicon.png" class=""></img>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 e-login-box e-white">
+            <div class="col-md-12 col-lg-12">
+                <div class="row e-row-margin e-login-header">
+                    <div class="col-lg-12 e-center e-fcolor-lightblue e-font-lg">
+                        <header>כניסה למערכת</header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div ng-if="vm.model.message !== ''" class="alert alert-danger alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {{vm.model.message}}
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6  col-md-offset-3 col-lg-offset-3">
+                        <form name="vm.signinForm" class="form-signup" novalidate>
+                            <h2 class="form-signup-heading"></h2>
+
+                            <div class="form-group" ng-class="{ 'has-error': signinForm.$submitted && signinForm.inputUser.$invalid }">
+                                <label for="inputUser" class="sr-only">שם משתמש</label>
+                                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="שם משתמש" required="" autofocus="" ng-model="vm.model.signin.userName">
+                                <p class="help-block" ng-if="signinForm.$submitted && signinForm.inputUser.$error.required">שם משתמש - שדה נדרש</p>
+                            </div>
+
+                            <div class="form-group" ng-class="{ 'has-error': signinForm.$submitted && signinForm.inputPassword.$invalid }">
+                                <label for="inputPassword" class="sr-only">סיסמה</label>
+                                <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="סיסמא" required="" ng-model="vm.model.signin.password">
+                                <p class="help-block" ng-if="signinForm.inputPassword.$error.required">סיסמא - שדה נדרש</p>
+                            </div>
+
+                            <!--<div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="vm.model.signin.rememberMe">זכור אותי
+                                    </label>
+                                </div>
+                            </div>-->
+
+                            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="vm.signIn($event)">כניסה</button>
+
+                            <button type="button" class="btn btn-link" ui-sref="shell.auth.signup">אין לך חשבון? לחץ כאן להרשם</button>
+                        </form>
+                    </div>
+                    <!--<pre dir="ltr">{{vm.model|json}}</pre>-->
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

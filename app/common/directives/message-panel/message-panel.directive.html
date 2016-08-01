@@ -1,0 +1,12 @@
+<div class="message-panel-top" ng-if="vm.model.message !== null">
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss1="alert" aria-label="Close" ng-click="vm.clear()"><span aria-hidden="true">&times;</span></button>
+        <div class="row-fluid">
+            <span>{{vm.model.message.msg}}</span>
+            <strong ng-if="vm.model.message.code">{{vm.model.message.code}}</strong>
+        </div>
+        <div class="row-fluid" ng-if="vm.model.message.desc">
+            <span>{{vm.model.message.desc}}</span>
+        </div>
+    </div>
+</div>

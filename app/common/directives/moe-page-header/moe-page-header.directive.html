@@ -1,0 +1,12 @@
+﻿
+
+    <header class="header-info">
+        <h2 class="high">
+            <div class="info">
+                <ul>
+                    <li ng-repeat="title in ::vm.schema track by $index" ng-if="vm.model[title.name]"><span >{{title.header}}:</span>&nbsp;<i>{{vm.model[title.name]}}</i></li>
+                </ul>
+           </div>
+</h2>
+</header>
+

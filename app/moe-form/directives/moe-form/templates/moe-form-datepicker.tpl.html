@@ -1,0 +1,22 @@
+﻿<div class="calendar" style="bottom: 108px;left: -3px;">
+    <span class="nav">
+        <i class="arr-l">&nbsp;</i>  <input type="text"
+        id="{{::id}}"
+        name="{{::id}}"
+        ng-model="model[options.key]"
+        class="form-control"
+        ng-click="datepicker.open($event)"
+        uib-datepicker-popup="{{to.datepickerOptions.format}}"
+        is-open="datepicker.opened"
+        datepicker-options="to.datepickerOptions"
+        show-button-bar="false"
+        show-weeks="false" />
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="datepicker.open($event)" ng-disabled="to.disabled"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+        </span>
+</div>
+
+
+
+

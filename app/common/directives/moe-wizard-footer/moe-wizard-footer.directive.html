@@ -1,0 +1,4 @@
+﻿<div class="footer-nav">
+    <button ng-if="vm.step.stepName != vm.isFirst()" class="back" type="button" ng-click="vm.stepPrev(vm.step.stepName)">חזרה</button>
+    <button ng-if="vm.step.stepName != vm.isLast()"  type="button" ng-click="vm.stepNext(vm.step.stepName)">המשך</button> <!--ng-disabled="vm.isValid===true"-->
+</div>

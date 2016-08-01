@@ -1,0 +1,15 @@
+﻿<ui-select ng-if="to.required" multiple data-ng-model="model[options.key]" theme="bootstrap"   
+         require-multiple >
+    <ui-select-match placeholder="{{to.placeholder}}">{{$item[to.labelProp]}}</ui-select-match>
+    <ui-select-choices data-repeat="{{to.ngOptions}}">
+        <div ng-bind-html="trustAsHtml(option[to.labelProp])"></div>
+    </ui-select-choices>
+</ui-select>
+
+<ui-select ng-if="!to.required" multiple data-ng-model="model[options.key]" theme="bootstrap">
+    <ui-select-match placeholder="{{to.placeholder}}">{{$item[to.labelProp]}}</ui-select-match>
+    <ui-select-choices data-repeat="{{to.ngOptions}}">
+        <div ng-bind-html="trustAsHtml(option[to.labelProp])"></div>
+    </ui-select-choices>
+</ui-select>
+

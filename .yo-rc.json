@@ -1,0 +1,58 @@
+{
+  "generator-jw-ng-gen": {
+    "uirouter": true,
+    "templateDirectory": "templates/",
+    "directiveDirectory": "directives/",
+    "filterDirectory": "filters/",
+    "serviceDirectory": "services/",
+    "controllerDirectory": "controllers/",
+    "modalDirectory": "modals/",
+    "inject": {
+      "js": {
+        "file": "app/index.html",
+        "marker": "<!-- Add New Component JS Above -->",
+        "template": "<script src=\"<%= filename %>\"></script>"
+      },
+      "less": {
+        "relativeToModule": true,
+        "file": "<%= module %>.less",
+        "marker": "/* Add Component LESS Above */",
+        "template": "@import \"<%= filename %>\";"
+      }
+    },
+    "modules": [
+      {
+        "name": "home",
+        "file": "app\\home\\home.module.js"
+      },
+      {
+        "name": "help",
+        "file": "app\\help\\help.module.js"
+      },
+      {
+        "name": "common",
+        "file": "app\\common\\common.module.js"
+      },
+      {
+        "name": "shell",
+        "file": "app\\shell\\shell.module.js"
+      },
+      {
+        "name": "toxins",
+        "file": "app\\toxins\\toxins.module.js"
+      },
+      {
+        "name": "moeForm",
+        "file": "app\\moe-form\\moe-form.module.js"
+      },
+      {
+        "name": "moeDialog",
+        "file": "app\\moe-dialog\\moe-dialog.module.js"
+      },
+      {
+        "name": "moeSites",
+        "file": "app\\moe-sites\\moe-sites.module.js"
+      }
+    ]
+  }
+}

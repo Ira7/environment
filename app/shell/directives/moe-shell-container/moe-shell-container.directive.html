@@ -1,0 +1,28 @@
+<div class="">
+    <div class="row" ui-view="shellNavView"></div>
+    <div id="container" class="container-fluid height100 e-gray">
+        <div class="row e-row-margin">
+
+            <div ui-view="shellSideView" class="sidebar sidebar-right sidebar-animate col-xs-hidden col-sm-hidden col-md-hidden col-lg-hidden e-blue">
+                <!-- Side Menu for Module goes here -->
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!--<div ui-view="shellView"></div>-->
+    <!--<moe-shell-container></moe-shell-container>-->
+    <div class="row" id="content" ui-view="shellHeaderView" ng-if="vm.model.initialized">  </div>
+       
+    <div class="row" id="content" ui-view="shellContentView" ng-if="vm.model.initialized">
+        <!-- Module Content goes here -->
+    </div>
+    
+
+    <moe-loading loading="vm.model.loading"></moe-loading>
+    
+    <message-panel></message-panel>
+</div>

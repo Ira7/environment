@@ -1,0 +1,87 @@
+﻿<div class="row-fluid">
+    <link href="assets/css/login.css" type="text/css" rel="stylesheet" />
+    <div class="row e-login-logorow e-center">
+        <div class="col-lg-12 col-md-12">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <img src="assets/images/Echelon_mainLogo.png" class=""></img>
+            </div>
+        </div>
+    </div>
+     <div class="row" >
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 e-login-box  e-white">
+            <div class="col-md-12 col-lg-12">
+                <div class="row e-row-margin ">
+                    <div class="col-lg-12 e-center e-fcolor-lightblue e-font-lg">
+                        <header>הרשמה</header>
+                    </div>
+                </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-6  col-md-offset-3 col-lg-offset-3">
+    <div ng-if="vm.model.message !== ''" class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{vm.model.message}}
+    </div>
+    
+        <form name="signupForm" class="form-signup" novalidate>
+            <h2 class="form-signup-heading"></h2>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="First Name" required="" autofocus="" ng-model="vm.model.registration.firstName">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד שם משתמש</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="Last Name" required="" autofocus="" ng-model="vm.model.registration.lastName">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד שם משתמש</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="Identity Number" required="" autofocus="" ng-model="vm.model.registration.identityNumber">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד שם משתמש</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="Email" required="" autofocus="" ng-model="vm.model.registration.email">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד המייל</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="Mobile Phone" required="" autofocus="" ng-model="vm.model.registration.mobilePhone">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד שם משתמש</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputUser.$invalid }">
+                <label for="inputUser" class="sr-only">User</label>
+                <input type="text" name="inputUser" id="inputUser" class="form-control" placeholder="שם משתמש" required="" autofocus="" ng-model="vm.model.registration.userName">
+                <p class="help-block" ng-if="signupForm.inputUser.$error.required">נא הקלד שם משתמש</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputPassword.$invalid }">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="סיסמה" required="" ng-model="vm.model.registration.password">
+                <div ng-if="loginForm.inputPassword.$invalid">Password is required.</div>
+                <p class="help-block" ng-if="signupForm.inputPassword.$error.required">נא הקלד סיסמה</p>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': signupForm.inputPasswordConfirm.$invalid }">
+                <label for="inputPasswordConfirm" class="sr-only">Password</label>
+                <input type="password" name="inputPasswordConfirm" id="סיסמה לאימות" class="form-control" placeholder="אמת סיסמה" required="" ng-model="vm.model.registration.confirmPassword">
+                <div ng-if="loginForm.inputPasswordConfirm.$invalid">Confirm Password is required.</div>
+                <p class="help-block" ng-if="signupForm.inputPasswordConfirm.$error.required">נא אמת את הסיסמה</p>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="vm.signUp($event)">הרשמה</button>
+
+            <button type="button" class="btn btn-link" ui-sref="shell.auth.signin">לחץ כאן להיכנס...</button>
+        </form>
+    </div>
+    <!--<pre dir="ltr">{{vm.model|json}}</pre>-->
+</div>
+           </div>
+           </div>
+    </div>

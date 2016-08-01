@@ -1,0 +1,935 @@
+/*-- Style Sheet*/
+
+@font-face {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    src: url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #e8e9ec;
+}
+
+html{
+  /* always show scrollbar so content doesn't move when it shows/hides */
+  overflow-y: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body {
+    padding-top: 50px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 16px;
+}
+
+.brand-image{
+    height: 100%;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.message-panel-top {
+    position:fixed; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    z-index:9999; 
+    border-radius:0px
+}
+
+.alert{
+    border-radius: 0;
+}
+
+.e-dropdown {
+    padding:5px;
+}
+
+.e-dropdown-bt {
+    min-width:150px;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.e-box-margin {
+    margin: 18px 17px 5px 15px;
+}
+
+.e-row-margin {
+  height:0;
+  line-height:0;
+  overflow:hidden;
+}
+
+.e-gray {
+    height:0!important;
+  line-height:0;
+  overflow:hidden;
+}
+.e-right {
+    float:right;
+}
+
+.e-padding-top {
+    padding-top:20px;
+}
+
+.e-padding-bottom {
+    padding-bottom:20px;
+}
+
+.e-signout {
+    float: left;
+    position: relative;
+    line-height: 0;
+    bottom: 10px;
+    right: 10px;
+}
+
+.e-topnav {
+    /*padding-right: 90px;*/
+}
+
+.e-topnav li>a:before {
+    content: ' |';
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+
+.padding0 {
+    padding: 0 !important;
+}
+
+
+/*-- Color Palette--*/
+
+.e-empty {
+    background-color: transparent;
+}
+
+.e-green {
+    background-color: #4cb050;
+}
+
+.e-lightblue {
+    background-color: #5a92ad;
+}
+
+.e-blue {
+    background-color: #34495e;
+}
+
+.e-darkblue {
+    background-color: #263544;
+}
+
+.e-black {
+    background-color: #000000;
+}
+
+.e-orange {
+    background-color: #f77b31;
+}
+
+.e-red {
+    background-color: #e9573e;
+}
+
+.e-gray {
+    background-color: #e8e9ec;
+}
+
+.e-white {
+    background-color: #ffffff;
+}
+
+.e-black-nav {
+    background-color: #1e2935;
+}
+
+
+
+.e-sidenav-dashicon {
+    /*background: url(../../assets/images/icons/status_icon.png) 2px -72px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-sidenav-dashicon {
+    /*background: url(../../assets/images/icons/status_icon.png) 2px -142px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-sidenav-planicon {
+    /*background: url(../../assets/images/icons/Financial-plan_icon.png) 2px 0px no-repeat;*/
+    width: 61px;
+    height: 58px;
+}
+
+.e-sidenav-planicon:active {
+    /*background: url(../../assets/images/icons/Financial-plan_icon.png) 2px -70px no-repeat;*/
+    width: 61px;
+    height: 58px;
+}
+
+.e-sidenav-moneyicon {
+    /*background: url(../../assets/images/icons/money-status_icon.png) 2px 0px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-sidenav-moneyicon:active {
+    /*background: url(../../assets/images/icons/money-status_icon.png) 2px -70px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-sidenav-vaulticon {
+    /*background: url(../../assets/images/icons/vault_icon.png) 2px -80px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-sidenav-vaulticon:active {
+    /*background: url(../../assets/images/icons/vault_icon.png) 2px -150px no-repeat;*/
+    width: 61px;
+    height: 59px;
+}
+
+.e-disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+/*-- Fonts - Family , Size and Colors--*/
+
+
+/*.e-font12 {*/
+
+.e-font-sm {
+    font-size: 0.9em;
+}
+
+.e-font-ms {
+    font-size: 1.1em;
+}
+
+.e-font-md {
+    font-size: 1.250em;
+}
+
+.e-font-lg {
+    font-size: 1.563em;
+}
+
+.e-fontbold {
+    font-weight: bolder;
+}
+
+.e-fcolor-darkgrey {
+    color: #323941;
+}
+
+.e-fcolor-lightblue {
+    color: #5A92AD;
+}
+
+.e-fcolor-white {
+    color: #FFFFFF;
+}
+
+.e-fcolor-black {
+    color: #000000;
+}
+
+.e-fcolor-gray {
+    color: #999999;
+}
+
+.e-fcolor-orange {
+    color: #F77B31;
+}
+
+
+/*--End Fonts--*/
+
+
+/*--Home Page and Global CSS--*/
+
+.height100 {
+    height: 100%;
+}
+
+.e-box-info {
+    min-height: 88px;
+    padding-top:10px;
+}
+
+.e-info img {
+    padding-top:10px;
+    float: left;
+    /*right: 25%;*/
+    /*position: relative;*/
+}
+
+.e-info-num {
+    padding-top: 5px;
+}
+
+.e-info-des {
+    padding-left: 10px;
+    line-height: 0.5;
+}
+
+.e-box-tasks {
+    min-height: 257px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.e-task-item {
+    border-bottom: thin solid #e8e9ec;
+    min-height: 50px;
+}
+
+.e-task-flag-red  {
+    top: 10px;
+    left: 20px;
+    background-image: url("../images/icons/red_flag.png");
+    min-height: 19px;
+    background-repeat: no-repeat;
+
+
+}
+
+.e-alert-flag-red  {
+    top: 5px;
+    background-image: url("../images/icons/red_flag.png");
+    min-height: 19px;
+    background-repeat: no-repeat;
+
+
+}
+
+.e-task-flag-yellow  {
+    top: 10px;
+    left: 20px;
+    background-image: url("../images/icons/yellow_flag.png");
+    min-height: 19px;
+    background-repeat: no-repeat;
+
+}
+
+.e-task-flag-green  {
+    top: 10px;
+    left: 20px;
+    background-image: url("../images/icons/green_flag.png");
+    min-height: 19px;
+    background-repeat: no-repeat;
+
+}
+
+.e-alert-flag-green  {
+    top: 5px;
+    background-image: url("../images/icons/green_flag.png");
+    min-height: 19px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.e-white-envelope {
+    background-image: url("../images/icons/White_envelope.png");
+    width: 14px;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+
+.e-blue-envelope {
+    background-image: url("../images/icons/Blue_envelope.png");
+    width: 14px;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+
+.e-box-alerts {
+    min-height: 360px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 2px;
+}
+
+.e-alert-item {
+    border-bottom: thin solid #e8e9ec;
+    min-height: 50px;
+    padding: 7.5px;
+}
+
+.e-alert-iteml {
+    padding: 7.5px;
+}
+
+.e-arrow {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.e-viewall {
+    padding-top: 15px;
+}
+
+.e-moreinfo {
+    text-align: left;
+}
+
+.e-sidebar img {
+   border : 0;
+}
+.e-sidebar {
+    padding-top: 25px;
+
+}
+
+.e-sidebar-height {
+    height:100%;
+}
+
+.e-sidebar-plnnav {
+    min-height:30px;
+}
+
+.e-sidebar-fix {
+    min-width: 137px;
+}
+
+.e-sidefix {
+    max-width:137px;
+}
+.e-sidebar-txt {
+    text-align: center;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #34495e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #34495e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.e-sidebar-bt {
+    position: absolute;
+    right: -10px;
+}
+
+.e-badge {
+    position: relative;
+    right: 22%;
+    top: -8px;
+    background-color: #e9573e;
+}
+
+.e-arrow-prev {
+    /*width: 25px;
+    height: 22px;
+    background: url("../images/icons/arrow.png") 1px 21px;
+    transform: rotate(180deg);*/
+    position: relative;
+    top: 12px;
+    padding-left: 10px;
+}
+
+.e-arrow-prev img {
+    border: 0;
+    outline: none;
+}
+
+.e-arrow-next {
+    width: 25px;
+    height: 22px;
+    background: url(../images/icons/arrow.png) 1px 21px;
+}
+
+.e-profile {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.e-profile img {
+    height: 50px;
+    width: 50px;
+}
+
+.e-profile-name {
+    padding: 15px;
+}
+
+
+/*--Goals Page--*/
+
+.e-goals {
+    min-height: 117px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.e-goals-des {
+    min-height: 797px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.e-goals-chart {
+    min-height: 308px;
+}
+
+.e-goals-fieldrow {
+    max-height: 10px;
+}
+
+.e-goals-left {
+    text-align: left;
+}
+
+.e-goals-details-header {
+    border-bottom: 1px solid #999999;
+}
+
+.e-goals-details-field {
+    padding-bottom: 5px;
+}
+
+.e-goals-details-text {
+    text-align: justify;
+    padding: 15px;
+}
+
+.e-goals-file img {
+    top: 3px;
+    position: relative;
+}
+
+.e-goals-cards {
+    margin-bottom: 5px;
+}
+
+.e-goals-count {
+    min-height: 97px;
+    padding-top: 20px;
+    padding-right: 17px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.e-goals-arrow {
+        text-align: left;
+    bottom: 50px;
+    position: relative;
+    max-height: 0px;
+}
+
+.e-active {
+    background-color: #5a92ad;
+}
+
+.e-active .e-fcolor-black{
+    color: #ffffff;
+}
+
+.e-active .e-fcolor-gray{
+    color: lightgoldenrodyellow;
+}
+
+
+.e-goals-active {
+    background-color: #5a92ad !important;
+    color: #ffffff !important;
+}
+
+.btn-default:hover {
+    background-color: #5a92ad;
+    color: #ffffff;
+}
+
+.e-garrow-prev-active {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 41px;
+    transform: rotate(180deg);
+}
+
+.e-garrow-next-active {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 41px;
+}
+
+.e-garrow-prev {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 18px;
+    transform: rotate(180deg);
+}
+
+.e-garrow-next {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 18px;
+}
+
+.e-goals-nav-active {
+    background-color: #263544;
+}
+
+.e-goals-nav-active img {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 5px #4cb050 solid;
+}
+
+.e-goals-navrow {
+    min-height: 30px;
+    padding: 5px;
+}
+
+.e-goals-bc {
+    min-height: 50px;
+    padding: 10px;
+}
+
+.e-goals-navheader {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+
+/*--End Goals--*/
+
+
+/*--Risks Page --*/
+
+.e-risks {
+    min-height: 117px;
+    padding-left: 30px;
+    padding-right: 17px;
+}
+
+.e-risks-des {
+    min-height: 797px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 20px;
+}
+
+.e-risks-chart {
+    min-height: 308px;
+}
+
+.e-risks-fieldrow {
+    max-height: 10px;
+}
+
+.e-risks-left {
+    text-align: left;
+}
+
+.e-risks-details-header {
+    border-bottom: 1px solid #999999;
+}
+
+.e-risks-details-field {
+    padding-bottom: 5px;
+}
+
+.e-goals-info {
+    padding-top: 20px;
+}
+
+.e-goal-infol {
+    padding-bottom: 21.2px;
+}
+
+.e-risks-details-text {
+    text-align: justify;
+    padding: 15px;
+}
+
+.e-risks-file img {
+    top: 3px;
+    position: relative;
+}
+
+.e-risks-cards {
+    margin-bottom: 5px;
+}
+
+.e-risks-count {
+    min-height: 97px;
+    padding-top: 20px;
+    padding-right: 17px;
+    padding-left: 30px;
+}
+
+.e-risks-arrow {
+    text-align: left;
+    float: left;
+    bottom: 15px;
+    position: relative;
+    /*max-height: 0px;*/
+}
+
+.e-risks-active {
+    background-color: #5a92ad !important;
+    color: #ffffff !important;
+}
+
+.e-rarrow-prev-active {
+    width: 20px;
+    height: 16px;
+    background:url('../images/cards_arrow.png') 1px 41px;
+    transform: rotate(180deg);
+}
+
+.e-rarrow-next-active {
+    width: 20px;
+    height: 16px;
+    background:url('../images/cards_arrow.png') 1px 41px;
+}
+
+.e-rarrow-prev {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 18px;
+    transform: rotate(180deg);
+}
+
+.e-rarrow-next {
+    width: 20px;
+    height: 16px;
+    background: url('../images/cards_arrow.png') 1px 18px;
+}
+
+.e-risks-nav-active {
+    background-color: #263544;
+}
+
+.e-risks-nav-active img {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 5px #4cb050 solid;
+}
+
+.e-risks-navrow {
+    min-height: 30px;
+    padding: 5px;
+}
+
+.e-risks-bc {
+    min-height: 50px;
+    padding: 10px;
+}
+
+.e-risks-navheader {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+
+/*--End Risks--*/
+
+
+/*--Profile Page--*/
+
+.e-profile-box {
+    min-height: 160px;
+    padding: 20px 16px 20px 16px;
+}
+
+.e-profile-header {
+    padding: 20px 0px 26px 0px;
+}
+
+.e-profile-img {
+    position: absolute;
+    min-width: 130px;
+    min-height: 130px;
+}
+
+.e-profile-img-row {
+    min-height: 135px;
+}
+
+
+/*--Missions Approval Page--*/
+
+.e-approve {
+    min-height: 117px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.e-approve-active {
+    background-color: #5a92ad !important;
+    color: #ffffff !important;
+}
+
+.e-approve-fieldrow {
+    max-height: 10px;
+}
+
+.e-approve-top {
+    min-height: 100px;
+    padding: 17px 17px 10px 16px;
+}
+
+.e-approve-dropdown {
+    min-width: 200px;
+    text-align: right;
+}
+
+.e-approve-left {
+   text-align:left;
+}
+
+.e-approve-progress {
+    max-width:300px;
+    min-width:300px;
+    min-height:8px;
+    border:thin solid #dddddd;
+    float:left;
+}
+
+.e-approve-box-left {
+    padding:18px 46px 30px 27px;
+     padding-top:18px;
+     padding-right:46px;
+}
+
+.e-approve-bt {
+    min-width:100px;
+}
+
+.e-approve-details-header {
+    border-bottom: 1px solid #999999;
+}
+
+.e-approve-details-field {
+    padding-bottom: 5px;
+}
+
+.e-approve-details-text {
+    text-align: justify;
+    padding: 15px;
+}
+
+.e-progress-bar {
+    float:left;
+}
+
+/*--Safe Page --*/
+
+.e-sidebar-safe {
+    padding-top:0px;
+}
+
+/*--Money Page--*/
+
+.e-money-bc {
+    min-height: 50px;
+    padding: 10px;
+}
+
+.e-money-navrow {
+    min-height: 30px;
+    padding: 5px;
+}
+
+.e-money-nav-active {
+    background-color: #263544;
+}
+.e-money-nav-active {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 5px #4cb050 solid;
+}
+
+.e-money-navheader {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+/* admin-users */
+.form-user-data{
+    padding-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+@media screen and (max-width:768px) {
+   .user-profile{
+   font-size:45px;
+   }
+   .button-fix > button{
+          font-size:30px;
+   }
+   
+}
+
+@media screen and (max-width:992px) {
+  .user-profile{
+   font-size:45px;
+   }
+   .button-fix > button{
+          font-size:30px;
+   }
+   .jumbo-fix{
+       padding:0 0 0 0;
+   }
+}
+
+@media screen and (max-width:1024px ) {
+  .user-profile{
+   font-size:20px;
+   }
+   .button-fix > button{
+          font-size:15px;
+   }
+}
+
+#loading-bar .bar {
+  background: orange;
+}
+
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  orange;
+  border-left-color: orange;
+}
+
+/* angular-wizard overrides */
+
+.steps-indicator li{
+    float: right;
+}
