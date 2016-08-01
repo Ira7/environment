@@ -855,6 +855,7 @@ li.nav-7 {
     border-radius: 4px;
     position: absolute;
     z-index: 10;
+        width: 82%;
 }
 
     .form h4 {
@@ -924,7 +925,7 @@ li.nav-7 {
     
     border: 0 none !important;
     float: right !important;
-    height: 30px !important;
+    /*height: 30px !important;*/
     
     /*padding-bottom: 2px !important;*/
     margin-right: 3px !important;
@@ -1214,7 +1215,7 @@ border-color: rgba(250, 251, 252, 0);
     }*/
 
     .general-form .formly-field .control-label {
-        font-size: 24px;
+        font-size: 0px;
         font-family: almoni-dl-aaa-400;
         /*padding-bottom: 19px;*/
         padding-top: 20px;
