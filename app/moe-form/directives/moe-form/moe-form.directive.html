@@ -3,7 +3,7 @@
    <div ng-class="vm.className">
     <form name="vm.form" ng-submit="vm.onSubmit()" novalidate>
         <formly-form model="vm.formData" fields="vm.formSchema" options="vm.options" form="vm.form" result="vm.valueDefault">
-            <div class="col-xs-4 col-xs-offset-8 buttons" ng-if="vm.showButtons">
+            <div class="col-xs-4 col-xs-offset-8 buttons fBtn" ng-if="vm.showButtons">
 
                 <button type="button" class="R" ng-click="vm.onCancel()">סגור</button>
                 <button type="submit" class="R save">שמור</button>

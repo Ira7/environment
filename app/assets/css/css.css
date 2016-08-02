@@ -415,6 +415,9 @@ table.zebra, table.zebra_b {
 .footer-nav button {
   float:left;
 }
+.fBtn{
+        margin-top: 25px;
+}
 
 .add-button {
     display: inline-block;
