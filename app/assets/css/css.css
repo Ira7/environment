@@ -935,12 +935,10 @@ li.nav-7 {
   outline: none;
 }
 
-.ui-select-match span {
-    
+.ui-select-match span {  
     border: 0 none !important;
     float: right !important;
-    /*height: 30px !important;*/
-    
+    /*height: 30px !important;*/ 
     /*padding-bottom: 2px !important;*/
     margin-right: 4px !important;
     /*clear: both !important;*/
@@ -948,6 +946,10 @@ li.nav-7 {
      color: black !important;
     font-size: 18px !important;
     font-weight:900;
+
+    /*background-color: #eff1f3;
+    border-radius: 7px;*/
+
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
@@ -1067,6 +1069,10 @@ li.nav-7 {
 .ngdialog.ngdialog-theme-default .ngdialog-close{
     left:34px;
     right: unset;
+}
+.itemOption{
+
+
 }
 
 .popup {
