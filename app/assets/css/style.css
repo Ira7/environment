@@ -560,7 +560,9 @@ body {
     background-color: #5a92ad !important;
     color: #ffffff !important;
 }
-
+.btn-default{
+        background-color: #e6e6e6;
+}
 .btn-default:hover {
     background-color: #5a92ad;
     color: #ffffff;
