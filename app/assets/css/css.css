@@ -897,8 +897,10 @@ li.nav-7 {
 }
 
 .form input {
-    border: 0 none !important;
-    border-bottom: 1px solid #4b5657 !important;
+    border-left:none !important;
+     border-right:none !important;
+      border-top:none !important;
+    border-bottom: 1px solid #4b5657;
     height: 34px !important;
     padding-bottom: 5px !important;
     clear: both !important;
@@ -912,6 +914,7 @@ li.nav-7 {
     box-shadow: none;
     outline: none;
 }
+
 
 .ui-select-bootstrap > .ui-select-match > .btn {
     box-shadow: none !important;
@@ -968,11 +971,6 @@ li.nav-7 {
     border-bottom: 1px solid rgba(75,86,87,0.65);
 }
 
-input.form-control:disabled {
-    box-shadow: none !important;
-    background: none !important;
-    border-bottom: 1px solid #ccc;
-}
 
 .formly-field {
     margin-bottom: 0;
@@ -1489,3 +1487,28 @@ ul.general-list .box-list {
     padding-left:20px;
     padding-top:5px;
 }
+
+.disabled-field{   
+    height: 34px !important;
+    padding-bottom: 5px !important;
+    color: #a0a7b1 !important;
+    font-size: 20px !important;
+    display: block !important;
+    border-radius: 0 !important;
+    direction: rtl !important;
+    font-family: almoni-dl-aaa-300;
+    box-shadow: none;
+    outline: none;
+    
+}
+
+.disabled-field-input{
+     border-bottom: 1px solid #ccc !important;
+}
+
+
+/*input.form-control:disabled {
+    box-shadow: none !important;
+    background: none !important;
+    border-bottom: 1px solid #ccc !important;
+}*/
