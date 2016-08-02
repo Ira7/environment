@@ -910,7 +910,8 @@ li.nav-7 {
     padding-bottom: 5px !important;
     clear: both !important;
     /*color: #a0a7b1 !important;*/
-    color:#d9d5cf !important;
+    color: #4b5657!important;
+    
     font-size: 20px !important;
     display: block !important;
     width: 100% !important;
@@ -941,7 +942,7 @@ li.nav-7 {
     /*clear: both !important;*/
     /*color: #a0a7b1 !important;*/
      color: black !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
@@ -1090,9 +1091,7 @@ li.nav-7 {
         line-height: 24px;
     }
 
-    .popup .buttons {
-        float: left;
-    }
+  
 
         .popup .buttons button {
             border-radius: 4px;
@@ -1521,4 +1520,8 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
     border:none !important;
     box-shadow:none!important;
         padding: 1px 3px 0 3px!important;
+}
+
+.yes-no-buttons{
+    float:left;
 }
