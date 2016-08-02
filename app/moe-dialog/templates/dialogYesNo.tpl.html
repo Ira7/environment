@@ -2,9 +2,11 @@
     <!--<span class="close"></span>-->
     <h5 >{{ngDialogData.title}}  </h5>
     <p> {{ngDialogData.message}} </p>
-    <div class="buttons">
+    <div class="yes-no-buttons buttons">
+       
         <button type="button" class="R" ng-click="closeThisDialog(false)">{{ngDialogData.cancel|| "לא"}}  </button>
         <button type="button" class="R save" ng-click="closeThisDialog(true)"> {{ngDialogData.ok || "כן"}} </button>
+  
     </div>
 </div>
 
