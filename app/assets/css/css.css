@@ -1491,12 +1491,12 @@ ul.general-list .box-list {
     height:70px;
 }
 
-.btn-primary, .btn-primary:hover, .btn, .btn:hover {
-    /*background-color: #eee !important;*/
-    /*direction:rtl;
+span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
+    background-color: transparent !important;
+    direction:rtl;
     text-align: right;
     padding-left:20px;
-    padding-top:5px;*/
+    padding-top:5px;
 }
 
 .disabled-field{   
