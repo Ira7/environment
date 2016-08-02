@@ -874,9 +874,10 @@ li.nav-7 {
     }
 
 .ui-select-choices-row-inner {
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 18px !important;
     font-family: almoni-dl-aaa-400 !important;
+   
 }
 
 .ui-select-bootstrap > .ui-select-match > .btn {
@@ -899,8 +900,10 @@ li.nav-7 {
     box-shadow: none !important;
     padding-right: 0 !important;
 }
-
-.form input {
+.form{
+      font-weight: 900;
+}
+.form input, .form input:focus {
     border-left:none !important;
      border-right:none !important;
       border-top:none !important;
@@ -911,8 +914,8 @@ li.nav-7 {
     clear: both !important;
     /*color: #a0a7b1 !important;*/
     color: #262626!important;
-    font-weight: 400;
-    font-size: 16px !important;
+    font-weight: 900;
+    font-size: 18px !important;
     display: block !important;
     width: 100% !important;
     border-radius: 0 !important;
@@ -929,6 +932,7 @@ li.nav-7 {
 }
 .ui-select-match{
  background-color: #e6eaee !important;
+  outline: none;
 }
 
 .ui-select-match span {
@@ -942,7 +946,8 @@ li.nav-7 {
     /*clear: both !important;*/
     /*color: #a0a7b1 !important;*/
      color: black !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
+    font-weight:900;
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
