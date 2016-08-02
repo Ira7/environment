@@ -910,9 +910,9 @@ li.nav-7 {
     padding-bottom: 5px !important;
     clear: both !important;
     /*color: #a0a7b1 !important;*/
-    color: #4b5657!important;
-    
-    font-size: 20px !important;
+    color: #262626!important;
+    font-weight: 400;
+    font-size: 16px !important;
     display: block !important;
     width: 100% !important;
     border-radius: 0 !important;
@@ -942,7 +942,7 @@ li.nav-7 {
     /*clear: both !important;*/
     /*color: #a0a7b1 !important;*/
      color: black !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
