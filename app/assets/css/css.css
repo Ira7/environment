@@ -982,9 +982,11 @@ li.nav-7 {
     margin-bottom: 0;
 }
 
-/*.ui-select-multiple.ui-select-bootstrap {
-    padding: 0;
-}*/
+.ui-select-multiple.ui-select-bootstrap {
+      border:none !important;
+    box-shadow:none!important;
+        padding: 1px 3px 0 3px!important;
+}
 
 .form .cols {
     width: 45%;
@@ -1512,7 +1514,7 @@ ul.general-list .box-list {
      border-bottom: 2px solid #ccc !important;
 }
 
-ui-select-borderless{
+.ui-select-borderless{
     border:none !important;
     box-shadow:none!important;
         padding: 1px 3px 0 3px!important;
