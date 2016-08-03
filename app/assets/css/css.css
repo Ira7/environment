@@ -916,6 +916,7 @@ li.nav-7 {
      border-bottom: 2px solid #d9d5cf !important;
     height: 34px !important;
     padding-bottom: 5px !important;
+    padding-right: 0;
     clear: both !important;
     /*color: #a0a7b1 !important;*/
     color: #262626!important;
@@ -928,19 +929,22 @@ li.nav-7 {
     font-family: almoni-dl-aaa-300;
     box-shadow: none;
     outline: none;
+        overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
 .ui-select-bootstrap > .ui-select-match > .btn {
     box-shadow: none !important;
    
+  
 }
 .ui-select-match{
- background-color: #e6eaee !important;
+ /*background-color: #e6eaee !important;*/
   outline: none;
 }
 
-.ui-select-match span {  
+.drop-down-single span {  
     border: 0 none !important;
     float: right !important;
     /*height: 30px !important;*/ 
@@ -951,7 +955,11 @@ li.nav-7 {
      color: black !important;
     font-size: 18px !important;
     font-weight:900;
-
+overflow: hidden;
+    text-overflow: ellipsis;
+    width: 99%;
+    padding-right:0;
+        text-align: right;
     /*background-color: #eff1f3;
     border-radius: 7px;*/
 
@@ -973,8 +981,8 @@ li.nav-7 {
     display: block;
 }
 
-    .radio.ng-scope label, .form-group.ng-scope label {
-        min-height: 52px !important;
+    .radio.ng-scope label, .form-group label {
+        min-height: 40px !important;
     }
 
     .radio.ng-scope input[type=radio] {
@@ -999,10 +1007,12 @@ li.nav-7 {
 }
 
 .ui-select-multiple.ui-select-bootstrap {
-      border:none !important;
+   border: 1px solid #eee;
     box-shadow:none!important;
         padding: 1px 3px 0 3px!important;
 }
+
+
 
 .form .cols {
     width: 45%;
@@ -1540,4 +1550,18 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 
 .yes-no-buttons{
     float:left;
+}
+
+.ui-select-multiple.ui-select-bootstrap input.ui-select-search{
+    padding-top: 15px;
+}
+
+formly-field-ui-select-multiple > .ui-select-match>span{
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+
+.ui-select-match>span>span .ui-select-match-item .btn .btn-default btn-xs{
+    background-color: purple;
 }
