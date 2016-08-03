@@ -932,6 +932,9 @@ li.nav-7 {
         overflow: hidden;
     text-overflow: ellipsis;
 }
+.arr-l{
+    display: none;
+}
 
 
 .ui-select-bootstrap > .ui-select-match > .btn {
@@ -975,6 +978,7 @@ overflow: hidden;
     display: block;
     margin-bottom: 0;
     float: right;
+    padding-bottom: 30px;
 }
 
 .radio.ng-scope {
