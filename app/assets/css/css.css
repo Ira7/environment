@@ -1426,7 +1426,7 @@ ul.general-list .box-list {
        top:12px;
 }
 
-.general-form .uib-datepicker-popup.dropdown-menu.ng-scope th {
+ .uib-datepicker-popup.dropdown-menu.ng-scope th {
     padding: 3px 0;
     font-size: 16px;
     width: 26px;
@@ -1435,7 +1435,7 @@ ul.general-list .box-list {
     font-family: almoni-dl-aaa-700;
 }
 
-.general-form .uib-datepicker-popup.dropdown-menu.ng-scope td button {
+.uib-datepicker-popup.dropdown-menu.ng-scope td button {
     box-shadow: none;
     background: transparent;
     display: inline-block;
@@ -1450,28 +1450,57 @@ ul.general-list .box-list {
     color: #4d5759;
 }
 
-    .general-form .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover{
+    .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover{
         background-color: #f79d34 !important;
         color: #fff !important;
         font-family: almoni-dl-aaa-400;
     }
+.uib-datepicker.dropdown-menu td button:hover
+    {
+            margin-top: 10px;
+    background-color: #f79d34 !important;
+    color: #fff !important;
+    font-family: almoni-dl-aaa-400;
+    text-align: center;
+    /* padding-left: 5px; */
+    padding: 1px;
+    }
 
-.general-form .uib-datepicker-popup table {
+.uib-datepicker-popup table {
     text-align: center;
     margin: 0 auto;
 }
 
-.general-form .uib-datepicker-popup #datepicker-1178-9826-title, .general-form .uib-datepicker-popup #datepicker-1178-9826-title:hover {
+.uib-datepicker-popup #datepicker-1178-9826-title,  .uib-datepicker-popup #datepicker-1178-9826-title:hover, #datepicker-3883-2338-title {
     background-color: transparent !important;
     color: #38454f;
     font-size: 22px;
+    border:none;
 }
 
-.general-form input.ng-valid-maxlength, .general-form input.ng-valid-date {
-    font-size:22px
+#datepicker-768-9771-title>strong{
+    background-color: transparent !important;
+    color: #38454f;
+    font-size: 22px;
+    text-align: center;
 }
-.general-form .uib-datepicker-popup * {
+
+.uib-datepicker button{
+    border:none;
+}
+
+
+
+.general-form input.ng-valid-maxlength, .general-form input.ng-valid-date {
+    font-size:22px;
+    text-align: right;
+}
+.uib-datepicker, .uib-datepicker-popup * {
      outline:none!important;
+}
+
+.uib-daypicker thead{
+    direction: ltr;
 }
 .general-form .uib-daypicker  th button{
     background: #fff !important;
@@ -1484,6 +1513,7 @@ ul.general-list .box-list {
       font-weight:normal;
       position:relative;
       bottom:5px;
+    
    
 }
     .general-form .uib-daypicker th button strong {
@@ -1496,7 +1526,7 @@ ul.general-list .box-list {
     }
 
 
-.general-form .uib-datepicker-popup {
+.uib-datepicker-popup {
     padding: 20px 30px;
     border: 2px solid #dee2e5;
     box-shadow: none;
@@ -1508,8 +1538,10 @@ ul.general-list .box-list {
     width: 310px !important;
 }
 
-    .general-form .uib-datepicker-popup.dropdown-menu.ng-scope {
-    }
+   /*.uib-datepicker-popup.dropdown-menu
+     {
+             direction: ltr;
+    }*/
 
 .top-nav{
     top:-2px;
