@@ -41,6 +41,10 @@
     height: 0;
 }
 
+body{
+      outline: none !important;
+}
+
 .clearfix {
     display: inline-block;
 }
@@ -863,7 +867,7 @@ li.nav-7 {
 
     .form h4 {
         font-size: 24px;
-        padding-bottom: 45px;
+        /*padding-bottom: 45px;*/
     }
 
     .form label {
@@ -893,9 +897,14 @@ li.nav-7 {
     font-family: almoni-dl-aaa-300;
 }
 
-    .ui-select-bootstrap > .ui-select-match > .btn:hover {
+    .ui-select-bootstrap > .ui-select-match > .btn, .ui-select-bootstrap > .ui-select-match > .btn:hover {
         background: transparent;
+        border:none;
+        text-align: right !important;
+        width:100%;
+        outline: none;
     }
+
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
     color: #4b5657;
@@ -944,26 +953,29 @@ li.nav-7 {
   outline: none;
 }
 
+
 .drop-down-single span {  
     border: 0 none !important;
     float: right !important;
+    background-color:white;
     /*height: 30px !important;*/ 
     /*padding-bottom: 2px !important;*/
     margin-right: 4px !important;
     /*clear: both !important;*/
     /*color: #a0a7b1 !important;*/
-     color: black !important;
+     /*color: black !important;*/
     font-size: 18px !important;
     font-weight:900;
 overflow: hidden;
     text-overflow: ellipsis;
-    width: 99%;
+    width: 97%;
     padding-right:0;
         text-align: right;
     /*background-color: #eff1f3;
     border-radius: 7px;*/
 
 }
+
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
     right: auto !important;
@@ -982,7 +994,7 @@ overflow: hidden;
 }
 
     .radio.ng-scope label, .form-group label {
-        min-height: 40px !important;
+        min-height: 30px;
     }
 
     .radio.ng-scope input[type=radio] {
@@ -1006,10 +1018,15 @@ overflow: hidden;
     margin-bottom: 0;
 }
 
-.ui-select-multiple.ui-select-bootstrap {
+.general-form .ui-select-multiple.ui-select-bootstrap {
    border: 1px solid #eee;
     box-shadow:none!important;
         padding: 1px 3px 0 3px!important;
+}
+
+.ui-select-multiple.ui-select-bootstrap{
+    border:none;
+      box-shadow:none;
 }
 
 
@@ -1166,6 +1183,10 @@ overflow: hidden;
 
     .general-form hr {
         display: none;
+    }
+
+    hr{
+        display:none;
     }
 
     .general-form .formly-field-datepicker, .general-form .formly-field-input, .general-form .formly-field.ng-scope.ng-isolate-scope.formly-field-clear-value, .general-form .formly-field-select, .general-form .formly-field-group:first-child {
