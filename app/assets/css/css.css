@@ -880,6 +880,11 @@ li.nav-7 {
    
 }
 
+.ui-select-bootstrap .ui-select-choices-row>a>div{
+        overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .ui-select-bootstrap > .ui-select-match > .btn {
     /*border-bottom: 1px solid #4b5657 !important;*/
     border-bottom: 2px solid #d9d5cf !important;
@@ -1040,7 +1045,7 @@ li.nav-7 {
 
 .form .alert {
     font-size: 15px;
-    position: relative;
+    /*position: relative;*/
     top: 0;
     right: 2px;
     /*color: #ff0000;*/
