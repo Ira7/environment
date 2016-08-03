@@ -1508,8 +1508,6 @@ ul.general-list .box-list {
     width: 310px !important;
 }
 
-    .general-form .uib-datepicker-popup.dropdown-menu.ng-scope {
-    }
 
 .top-nav{
     top:-2px;
@@ -1517,10 +1515,9 @@ ul.general-list .box-list {
 }
 
 span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
-    background-color: transparent !important;
     direction:rtl;
     text-align: right;
-    padding-left:20px;
+    /*padding-left:20px;*/
     padding-top:5px;
 }
 
@@ -1551,7 +1548,13 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 .yes-no-buttons{
     float:left;
 }
-
+.ui-select-multiple.ui-select-bootstrap .ui-select-match-item{
+        margin: 0 12px 3px 0;
+}
+.ui-select-multiple.ui-select-bootstrap .ui-select-match .close{
+     font-size: 2.6em;
+    line-height: 0.5;
+}
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search{
     padding-top: 15px;
 }
