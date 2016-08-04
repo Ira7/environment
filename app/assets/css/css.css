@@ -485,7 +485,11 @@ table.zebra, table.zebra_b {
         vertical-align: middle;
         font-size: 18px;
     }
+    
+table.zebra tbody tr:nth-child(odd):hover{
 
+background: #fcdcb6;
+}
     table.zebra tbody tr:nth-child(odd) {
         background: #eeefef;
     }
