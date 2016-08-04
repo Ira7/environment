@@ -1390,7 +1390,7 @@ ul.general-list .box-list {
 
 .general-form .formly-field button {
     border-radius: 4px;
-    background-color: #f79d34;
+    /*background-color: #f79d34;*/
     font-size: 18px;
     text-align: center;
     height: 36px;
@@ -1401,10 +1401,10 @@ ul.general-list .box-list {
     cursor: pointer;
 }
 
-    .general-form .formly-field button:hover {
+    /*.general-form .formly-field button:hover {
         color: #fff;
         background-color: #534540 !important;
-    }
+    }*/
 
 .general-form input {
     border: 0 none;
@@ -1445,6 +1445,13 @@ ul.general-list .box-list {
     color:grey;
 }
 .general-form button.pull-right i, .general-form button.pull-left i {
+    color:#f79d34;
+    font-size:16px;
+    position:relative;
+       top:12px;
+}
+
+button.pull-right i, button.pull-left i {
     color:#f79d34;
     font-size:16px;
     position:relative;
@@ -1524,10 +1531,34 @@ ul.general-list .box-list {
      outline:none!important;
 }
 
+.uib-monthpicker>thead, .uib-yearpicker>thead {
+  width: 100%;
+  direction:ltr;
+}
+.uib-monthpicker>thead>tr>th, .uib-yearpicker>thead>tr>th  {
+ background-color: white !important;
+ color:#38454f;
+ font-size: 20px;
+ text-align: center;
+}
+
+.uib-monthpicker>thead>tr>th>button:hover, .uib-yearpicker>thead>tr>th>button:hover  {
+ background-color: white !important;
+ color:#38454f;
+}
+
+.uib-monthpicker, .uib-yearpicker {
+  width: 100%;
+}
+
+/*.uib-monthpicker>tbody>tr>td{
+ border:1px solid grey;
+}*/
+
 .uib-daypicker thead{
     direction: ltr;
 }
-.general-form .uib-daypicker  th button{
+.general-form .uib-daypicker  th button, .general-form .uib-monthpicker  th button, .general-form .uib-yearpicker  th button {
     background: #fff !important;
     outline:none!important;
     font-size:24px;
@@ -1538,18 +1569,36 @@ ul.general-list .box-list {
       font-weight:normal;
       position:relative;
       bottom:5px;
-    
-   
 }
-    .general-form .uib-daypicker th button strong {
+ .uib-daypicker th button, .uib-monthpicker th button, .uib-yearpicker th button{
+    background: #fff !important;
+    outline:none!important;
+    font-size:24px;
+    width:100%;
+    text-align:center;
+    display:table;
+      font-family: almoni-dl-aaa-400;
+      font-weight:normal;
+      position:relative;
+      bottom:5px;
+}
+
+
+    .uib-daypicker th button strong {
         font-weight:normal;
+         background: #fff !important;
+          color: #38454f;
     }
 
-    .general-form .uib-daypicker  th button:hover {
+    .uib-daypicker th button:hover, .uib-monthpicker th button:hover, .uib-yearpicker th button:hover {
         background: #fff !important;
         color: #38454f;
+        text-align: center;
     }
 
+th >.btn-default{
+    background-color: transparent;
+}
 
 .uib-datepicker-popup {
     padding: 20px 30px;
