@@ -1471,7 +1471,7 @@ button.pull-right i, button.pull-left i {
     font-family: almoni-dl-aaa-700;
 }
 
-.uib-datepicker-popup.dropdown-menu.ng-scope td button {
+.uib-datepicker-popup.dropdown-menu td button {
     box-shadow: none;
     background: transparent;
     display: inline-block;
@@ -1486,7 +1486,7 @@ button.pull-right i, button.pull-left i {
     color: #4d5759;
 }
 
-    .uib-datepicker-popup.dropdown-menu.ng-scope td button:hover{
+.uib-datepicker-popup.dropdown-menu.ng-scope td button:hover{
         background-color: #f79d34 !important;
         color: #fff !important;
         font-family: almoni-dl-aaa-400;
@@ -1546,18 +1546,32 @@ button.pull-right i, button.pull-left i {
  text-align: center;
 }
 
-.uib-monthpicker>thead>tr>th>button:hover, .uib-yearpicker>thead>tr>th>button:hover  {
+/*.uib-monthpicker>thead>tr>th>button:hover, .uib-yearpicker>thead>tr>th>button:hover  {
  background-color: white !important;
  color:#38454f;
-}
+ background-color: #f79d34 !important;
+ border-radius:0 !important;
+}*/
+
+
 
 .uib-monthpicker, .uib-yearpicker {
   width: 100%;
 }
 
-/*.uib-monthpicker>tbody>tr>td{
+.uib-monthpicker>tbody>tr>td, .uib-yearpicker>tbody>tr>td{
  border:1px solid grey;
-}*/
+ width: 100px!important;
+}
+
+.uib-monthpicker>tbody>tr>td>button:hover, .uib-yearpicker>tbody>tr>td>button>hover{
+
+ /*border:1px solid grey;*/
+ width: 100px!important;
+ background-color: #f79d34 !important;
+ border-radius:0 !important;
+}
+
 
 .uib-daypicker thead{
     direction: ltr;
@@ -1605,7 +1619,7 @@ th >.btn-default{
 }
 
 .uib-datepicker-popup {
-    padding: 20px 30px;
+    padding: 2%;
     border: 2px solid #dee2e5;
     box-shadow: none;
     position: absolute;
