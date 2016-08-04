@@ -527,11 +527,11 @@ table.zebra tr:nth-child(odd) {
   
 }*/
 
-.tbl h4 {
+/*.tbl h4 {
     font-size: 24px;
     font-family: almoni-dl-aaa-400;
     padding-bottom: 12px;
-}
+}*/
 
 
 li.active-nav-1:hover h3, li.active-nav-2:hover h3, li.active-nav-3:hover h3, li.active-nav-4:hover h3, li.active-nav-5:hover, li.active-nav-6:hover h3, li.active-nav-7:hover h3 {
@@ -865,9 +865,13 @@ li.nav-7 {
         width: 82%;
 }
 
+.form h2{
+  padding-bottom: 19px;
+
+}
     .form h4 {
         font-size: 24px;
-        padding-bottom: 45px;
+        /*padding-bottom: 45px;*/
     }
 
     .form label {
@@ -998,7 +1002,7 @@ overflow: hidden;
 }
 
     .radio.ng-scope label, .form-group label {
-        min-height: 30px;
+        /*min-height: 30px;*/
     }
 
     .radio.ng-scope input[type=radio] {
