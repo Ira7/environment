@@ -527,11 +527,11 @@ table.zebra tr:nth-child(odd) {
   
 }*/
 
-.tbl h4 {
+/*.tbl h4 {
     font-size: 24px;
     font-family: almoni-dl-aaa-400;
     padding-bottom: 12px;
-}
+}*/
 
 
 li.active-nav-1:hover h3, li.active-nav-2:hover h3, li.active-nav-3:hover h3, li.active-nav-4:hover h3, li.active-nav-5:hover, li.active-nav-6:hover h3, li.active-nav-7:hover h3 {
@@ -866,7 +866,7 @@ li.nav-7 {
 }
 
 .form h2{
-  padding-bottom: 27px;
+  padding-bottom: 19px;
 
 }
     .form h4 {
