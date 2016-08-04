@@ -1398,7 +1398,7 @@ ul.general-list .box-list {
     font-size: 18px;
     text-align: center;
     height: 36px;
-    padding: 0 36px;
+    /*padding: 0 36px;*/
     line-height: 36px;
     border: 0 none;
     font-family: almoni-dl-aaa-400;
@@ -1423,7 +1423,7 @@ ul.general-list .box-list {
     border-radius: 0;
 }
 
-.general-form .formly-field-datepicker button {
+.general-form .formly-field-datepicker button,  {
     padding: 0;
     width: 36px;
     height: 36px;
@@ -1431,6 +1431,12 @@ ul.general-list .box-list {
     border-radius: 0;
     z-index: 1000;
     cursor: pointer;
+}
+
+.formly-field-datepicker button, .formly-field-datepicker button:hover{
+      padding-left: 0;
+       padding-right: 0;
+        padding-top: 0;
 }
 
 .general-form .alert {
@@ -1441,13 +1447,7 @@ ul.general-list .box-list {
     top: 4px;
 }
 
-.general-form .formly-field-datepicker .input-group-btn button {
-    border-radius: 4px;
-    position: relative;
-    right: 405px;
-    bottom: 48px;
-    color:grey;
-}
+
 .general-form button.pull-right i, .general-form button.pull-left i {
     color:#f79d34;
     font-size:16px;
@@ -1455,6 +1455,9 @@ ul.general-list .box-list {
        top:12px;
 }
 
+button:active{
+    box-shadow: none!important;
+}
 button.pull-right i, button.pull-left i {
     color:#f79d34;
     font-size:16px;
@@ -1560,18 +1563,23 @@ button.pull-right i, button.pull-left i {
 }
 
 .uib-monthpicker>tbody>tr>td, .uib-yearpicker>tbody>tr>td{
- border:1px solid grey;
+ /*border:1px solid grey;*/
  width: 100px!important;
+}
+.uib-monthpicker>tbody>tr>td>button, .uib-yearpicker>tbody>tr>td>button{
+ border:1px solid #ccc !important; 
+ background-color: white !important;
+ border-radius:4px !important;
+margin: 2px!important;
 }
 
 .uib-monthpicker>tbody>tr>td>button:hover, .uib-yearpicker>tbody>tr>td>button>hover{
-
- /*border:1px solid grey;*/
- width: 100px!important;
  background-color: #f79d34 !important;
- border-radius:0 !important;
+ border-radius:4px !important;
 }
-
+.uib-day button, .uib-month button, .uib-year button{
+    min-width: 95% !important;
+}
 
 .uib-daypicker thead{
     direction: ltr;
@@ -1693,6 +1701,41 @@ formly-field-ui-select-multiple > .ui-select-match>span{
 }
 
 
-.ui-select-match>span>span .ui-select-match-item .btn .btn-default btn-xs{
-    background-color: purple;
+.calendar .nav .input-group-btn >button {
+    background-color: #d9d5cf;
+    border:none !important;
+      border-radius: 4px !important;
+    position: relative;
+    margin-top:-60px;
+   float:left;
+         padding-right: 9px;
+    padding-top: 9px;
+      width: 35px;
+    height: 35px;
+
 }
+
+.calendar .nav .input-group-btn >button:hover{
+    background-color: #4b5657;
+    border:none !important;
+      border-radius: 4px !important;
+    position: relative;
+           padding-right: 9px;
+    padding-top: 9px;
+}
+
+.general-form .calendar .nav .input-group-btn >button{
+  float: none;
+  padding:0;
+margin-top:-65px;
+margin-right:400px!important;
+}
+
+
+/*.general-form .formly-field-datepicker .input-group-btn button {
+    border-radius: 4px;
+    position: relative;
+    right: 405px;
+    bottom: 48px;
+    color:grey;
+}*/
