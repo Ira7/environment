@@ -41,7 +41,7 @@
     height: 0;
 }
 
-body{
+body *, body *:active{
       outline: none !important;
 }
 
@@ -437,7 +437,7 @@ table.zebra, table.zebra_b {
     text-align: right;
     font-family: almoni-dl-aaa-400;
     color: #4b5657;
-    margin: 14px auto 0;
+    margin: 14px auto 20px;
     cursor: pointer;
     box-sizing: border-box;
     padding-right: 30px;
@@ -1741,6 +1741,10 @@ formly-field-ui-select-multiple > .ui-select-match>span{
   padding:0;
 margin-top:-65px;
 margin-right:400px!important;
+}
+
+.summary{
+    padding-top:30px;
 }
 
 
