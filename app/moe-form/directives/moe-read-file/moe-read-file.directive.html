@@ -1,11 +1,9 @@
 <div>
-         <input type="file" onchange="angular.element(this).scope().checkFile(this.value)"  />
-        <div ng-if="content">
+    <input type="file" onchange="angular.element(this).scope().checkFile(this.value)" />
+    <div ng-if="content">
 
-            <h2>File content is:</h2>
-            <pre dir="ltr">{{ content }}</pre>
-
-        </div>
-
+        <h2>File content is:</h2>
+        <pre dir="ltr">{{ content }}</pre>
 
     </div>
+</div>
