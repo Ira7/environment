@@ -873,16 +873,20 @@ li.nav-7 {
   padding-bottom: 19px;
 
 }
+
+.add-new-item{
+    padding-bottom:20px;
+}
     .form h4 {
         font-size: 24px;
-        padding-bottom: 19px;
+        /*padding-bottom: 19px;*/
     }
 
     .form label {
         font-size: 20px;
         clear: both;
         display: block;
-        min-height: 48px;
+        min-height: 51px;
     }
 
 .ui-select-choices-row-inner {
@@ -1693,8 +1697,16 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 }
 .ui-select-multiple.ui-select-bootstrap .ui-select-match .close{
      font-size: 2.6em;
-    line-height: 0.5;
+    line-height: 0.5em;
+
+        
+    /*background-color: #847b7b;
+    border-radius: 50%;
+    width: 0.6em;
+    border: 0.8px solid grey;*/
 }
+
+
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search{
     padding-top: 15px;
 }
