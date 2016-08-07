@@ -1111,7 +1111,7 @@ overflow: hidden;
 }*/
 .ngdialog.ngdialog-theme-default .ngdialog-content {
     background-color: #fff;
-    width: 560px;
+    width: 450px;
 
 }
 .ngdialog.ngdialog-theme-default .ngdialog-close{
@@ -1135,6 +1135,7 @@ overflow: hidden;
     color: #4b5657;
     direction: rtl;
     text-align: right;
+        width: 411px;
 }
 
     .popup h5 {
