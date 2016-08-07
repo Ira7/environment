@@ -1190,7 +1190,7 @@ overflow: hidden;
 .general-form {
     text-align: right;
     direction: rtl;
-    color: #4b5657;
+    /*color: #4b5657;*/
 }
 
     .general-form .formly-field-group {
@@ -1301,10 +1301,10 @@ border-color: rgba(250, 251, 252, 0);
         /*padding-bottom: 19px;*/
         padding-top: 20px;
     }
-
+/*
     .general-form .formly-field i {
         color: grey;
-    }
+    }*/
 
     .general-form .formly-field span.row {
         display: block;
@@ -1735,6 +1735,7 @@ formly-field-ui-select-multiple > .ui-select-match>span{
     padding-top: 9px;
       width: 35px;
     height: 35px;
+    color: #4b5657;
 
 }
 
@@ -1745,6 +1746,7 @@ formly-field-ui-select-multiple > .ui-select-match>span{
     position: relative;
            padding-right: 9px;
     padding-top: 9px;
+    color:white;
 }
 
 .general-form .calendar .nav .input-group-btn >button{
