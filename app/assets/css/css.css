@@ -486,9 +486,8 @@ table.zebra, table.zebra_b {
         font-size: 18px;
     }
     
-table.zebra tbody tr:nth-child(odd):hover{
-
-background: #fcdcb6;
+table.zebra tbody tr:nth-child(odd):hover , table.zebra tbody tr:hover{
+    background: #fcdcb6;
 }
     table.zebra tbody tr:nth-child(odd) {
         background: #eeefef;
@@ -1301,10 +1300,15 @@ border-color: rgba(250, 251, 252, 0);
         /*padding-bottom: 19px;*/
         padding-top: 20px;
     }
-/*
-    .general-form .formly-field i {
+
+
+   /*.general-form .formly-field i {
         color: grey;
     }*/
+    /*.general-form .formly-field i:hover{
+        color: white;
+    }*/
+
 
     .general-form .formly-field span.row {
         display: block;
