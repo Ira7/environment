@@ -1833,6 +1833,11 @@ border-color: rgba(250, 251, 252, 0);
     padding-top:8%;
 }
 
+.ui-select-bootstrap > .ui-select-choices {
+    position: relative;
+    z-index: 12;
+}
+
 
 /*.general-form .formly-field-datepicker .input-group-btn button {
     border-radius: 4px;
