@@ -563,10 +563,10 @@ body {
 .btn-default{
         background-color: #e6e6e6;
 }
-.btn-default:hover {
+/*.btn-default:hover {
     background-color: #5a92ad;
     color: #ffffff;
-}
+}*/
 
 .e-garrow-prev-active {
     width: 20px;
