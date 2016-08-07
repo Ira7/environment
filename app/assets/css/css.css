@@ -1302,6 +1302,13 @@ border-color: rgba(250, 251, 252, 0);
         padding-top: 20px;
     }
 
+   .general-form .formly-field i {
+        color: grey;
+    }
+    .general-form .formly-field i:hover{
+        color: white;
+    }
+
     .general-form .formly-field i {
         color: grey;
     }
