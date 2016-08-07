@@ -935,8 +935,8 @@ li.nav-7 {
       border-top:none !important;
     /*border-bottom: 1px solid #4b5657;*/
      border-bottom: 2px solid #d9d5cf !important;
-    height: 34px !important;
-    padding-bottom: 5px !important;
+    /*height: 34px !important;*/
+    padding-bottom: 13px !important;
     padding-right: 0;
     clear: both !important;
     /*color: #a0a7b1 !important;*/
@@ -1699,9 +1699,9 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 .yes-no-buttons{
     float:left;
 }
-.ui-select-multiple.ui-select-bootstrap .ui-select-match-item{
+/*.ui-select-multiple.ui-select-bootstrap .ui-select-match-item{
         margin: 0 12px 3px 0;
-}
+}*/
 .ui-select-multiple.ui-select-bootstrap .ui-select-match .close{
      font-size: 2.6em;
     line-height: 0.5em;
@@ -1756,6 +1756,81 @@ margin-right:400px!important;
 
 .summary{
     padding-top:30px;
+}
+
+.info-icon{
+    background: url(../icons/payAttention.png) no-repeat;
+    height:50px;
+    width: 50px;
+    margin-left:10px;
+    margin-top:30px;
+    
+}
+
+.message-h4{
+    font-size: 24px;
+    font-family: almoni-dl-aaa-400;
+    padding-bottom: 2%;
+}
+
+.message{
+      font-size: 18px;
+    font-family: almoni-dl-aaa-400;
+}
+
+.no-access-msg-wrap{
+      display: block;
+        margin-bottom: 0;
+        width: 35%;
+        border-radius: 4px;
+        margin-bottom:2%;
+        border: 2px solid #e6eaee;
+        /*box-shadow: 0 0 2px rgba(0,0,0,0.28);*/
+      padding-top:24px;
+      padding-right:24px;
+      padding-bottom:64px;
+        box-sizing: border-box;
+        position: relative;
+        background-color: #fafbfc;
+            z-index: 11;
+}
+
+.no-access-msg-wrap:after{
+    left: 100%;
+	top: 40%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+
+    	border-left-color: #e6eaee;
+	border-width: 10px;
+	margin-top: -10px;
+
+}
+
+.no-access-msg-wrap:before{
+    left: 100%;
+	top: 40%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    left: 100%;
+border-color: rgba(250, 251, 252, 0);
+	border-left-color: #fafbfc;
+	border-width: 8px;
+	margin-top: -8px;
+    z-index: 10;
+}
+
+
+.no-access-msg{
+    padding-top:8%;
 }
 
 
