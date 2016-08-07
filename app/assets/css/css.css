@@ -1349,6 +1349,11 @@ border-color: rgba(250, 251, 252, 0);
             background-image: url(../icons/calendar_h.png);
         }
 
+
+.listFontSize{
+    font-size: 17px;
+}
+
 ul.general-list .box-list {
     border-radius: 6px;
     border: 1px solid #ced0da;

@@ -11,8 +11,8 @@
             <tbody >
                 <tr ng-if="vm.data[vm.key].length" ng-repeat="item in vm.data[vm.key] track by $index">
                     <td ng-repeat="fieldSchema in vm.schemaList track by $index">
-                        <span ng-if="fieldSchema.type && fieldSchema.type === 'radio'">{{item[fieldSchema.name] | moeRadioKey2value: fieldSchema.type}}</span>
-                        <span ng-if="fieldSchema.type && fieldSchema.type!=='radio'">{{item[fieldSchema.name] | moeLookupKey2value: fieldSchema.type }}</span>
+                        <span ng-if="fieldSchema.type && fieldSchema.type === 'radio'" class="listFontSize">{{item[fieldSchema.name] | moeRadioKey2value: fieldSchema.type}}</span>
+                        <span ng-if="fieldSchema.type && fieldSchema.type!=='radio'" class="listFontSize">{{item[fieldSchema.name] | moeLookupKey2value: fieldSchema.type }}</span>
                         <span ng-if="!fieldSchema.type" ng-bind="item[fieldSchema.name]"></span>
                     </td>
                     <td>
