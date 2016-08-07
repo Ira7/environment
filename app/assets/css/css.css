@@ -193,7 +193,7 @@ ul.sites li {
 
     ul.sites li:hover {
         border: 2px solid #f89d34;
-        margin: -2px -2px 52px 54px;
+        /*margin: -2px -2px 52px 54px;*/
     }
 
         ul.sites li:hover button {
