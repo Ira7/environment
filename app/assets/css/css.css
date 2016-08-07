@@ -486,9 +486,8 @@ table.zebra, table.zebra_b {
         font-size: 18px;
     }
     
-table.zebra tbody tr:nth-child(odd):hover{
-
-background: #fcdcb6;
+table.zebra tbody tr:nth-child(odd):hover , table.zebra tbody tr:hover{
+    background: #fcdcb6;
 }
     table.zebra tbody tr:nth-child(odd) {
         background: #eeefef;
