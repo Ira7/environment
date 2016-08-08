@@ -1047,7 +1047,10 @@ overflow: hidden;
 .general-form .ui-select-multiple.ui-select-bootstrap {
    border: 1px solid #eee;
     box-shadow:none!important;
-        padding: 1px 3px 0 3px!important;
+        padding: 1px 2px 1px 3px!important;
+            height: 2.2em;
+            width: 100%;
+
 }
 
 .ui-select-multiple.ui-select-bootstrap{
@@ -1736,10 +1739,13 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
     border: 0.8px solid grey;*/
 }
 
-
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search{
     /*padding-top: 15px;*/
    max-height:2em;
+   /*height:0 !important;*/
+padding-bottom: 0 !important;
+
+
 }
 
 formly-field-ui-select-multiple > .ui-select-match>span{
