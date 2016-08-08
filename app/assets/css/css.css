@@ -412,6 +412,14 @@ table.zebra, table.zebra_b {
         background: #fff !important;
     }
 
+.table-data{
+    max-width: 9em;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    word-break: normal;
+}
+
+
 .footer-nav {
    width: 100%;
 }
@@ -437,7 +445,7 @@ table.zebra, table.zebra_b {
     text-align: right;
     font-family: almoni-dl-aaa-400;
     color: #4b5657;
-    margin: 14px auto 20px;
+    margin: 14px 20px 20px 0;
     cursor: pointer;
     box-sizing: border-box;
     padding-right: 30px;
@@ -677,6 +685,7 @@ li.nav-7 {
     display: inline-block;
     float: left;
     cursor: pointer;
+      margin-left:3%;
 }
 
 .tbl .junk {
@@ -685,9 +694,10 @@ li.nav-7 {
     height: 36px;
     display: inline-block;
     float: left;
-    margin-right: 14px;
-    margin-left: 38px;
+    /*margin-right: 14px;
+    margin-left: 38px;*/
     cursor: pointer;
+    margin-left:3%;
 }
 
 .tbl .pencil:hover {
@@ -998,9 +1008,9 @@ overflow: hidden;
 
 .form .row {
     width: 100%;
-    display: block;
+    /*display: block;*/
     margin-bottom: 0;
-    float: right;
+    /*float: right;*/
     padding-bottom: 30px;
 }
 

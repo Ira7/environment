@@ -1,29 +1,55 @@
 ﻿<section class="tbl" ng-class="vm.optionsList.classSection">
     <h4 ng-class="vm.optionsList.classH4"> {{vm.title}} </h4>
     <div class="table">
-        <table class="zebra">
-            <thead>
+        <table class="zebra col-xs-12">
+            <thead class="row">
                 <tr>
                     <th ng-repeat="headColumn in  ::vm.schemaList track by $index"><pre ng-bind="headColumn.header"></pre></th>
                     <th>&nbsp;</th>
                 </tr>
             </thead>
-            <tbody >
+            <tbody class="row">
                 <tr ng-if="vm.data[vm.key].length" ng-repeat="item in vm.data[vm.key] track by $index">
                     <td ng-repeat="fieldSchema in vm.schemaList track by $index">
+                        <div class="table-data">
                         <span ng-if="fieldSchema.type && fieldSchema.type === 'radio'" class="listFontSize">{{item[fieldSchema.name] | moeRadioKey2value: fieldSchema.type}}</span>
                         <span ng-if="fieldSchema.type && fieldSchema.type!=='radio'" class="listFontSize">{{item[fieldSchema.name] | moeLookupKey2value: fieldSchema.type }}</span>
                         <span ng-if="!fieldSchema.type" ng-bind="item[fieldSchema.name]"></span>
+                  <div>
                     </td>
                     <td>
+                      
                         <span class="junk" ng-click="vm.deleteItem(item)"></span>
                         <span class="pencil" ng-click="vm.edit(item,$index)"></span>
+                      
                     </td>
                 </tr>
                 <tr><td colspan="{{vm.schemaList.length + 1}}"></td></tr>
             </tbody>
         </table>       
     </div>
+
+
+<!--<div class="table">
+    <div class="zebra col-xs-12">
+<div class="row">
+    <div class="col-xs-2" ng-repeat="headColumn in  ::vm.schemaList track by $index">{{headColumn.header}}</div>
+</div>
+<div class="row" ng-if="vm.data[vm.key].length" ng-repeat="item in vm.data[vm.key] track by $index">
+    <div class="col-xs-2" ng-repeat="fieldSchema in vm.schemaList track by $index">
+                        <span ng-if="fieldSchema.type && fieldSchema.type === 'radio'" class="listFontSize">{{item[fieldSchema.name] | moeRadioKey2value: fieldSchema.type}}</span>
+                        <span ng-if="fieldSchema.type && fieldSchema.type!=='radio'" class="listFontSize">{{item[fieldSchema.name] | moeLookupKey2value: fieldSchema.type }}</span>
+                        <span ng-if="!fieldSchema.type" ng-bind="item[fieldSchema.name]"></span>
+                    </div>
+                                       <div class="col-xs-2">
+                        <span class="junk" ng-click="vm.deleteItem(item)"></span>
+                        <span class="pencil" ng-click="vm.edit(item,$index)"></span>
+                    </div>
+</div>
+    </div>
+</div>-->
+
+
     <div class="add-button">
         <a href="javascript:void(0);" class="add" ng-click="vm.addNewItem()"><span></span> הוספת פריט חדש</a>
     </div>
