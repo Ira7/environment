@@ -1608,7 +1608,7 @@ margin: 2px!important;
     min-width: 95% !important;
 }
 
-.uib-daypicker thead{
+.uib-daypicker, .uib-monthpicker, .uib-yearpicker{
     direction: ltr;
 }
 .general-form .uib-daypicker  th button, .general-form .uib-monthpicker  th button, .general-form .uib-yearpicker  th button {
@@ -1727,7 +1727,8 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 
 
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search{
-    padding-top: 15px;
+    /*padding-top: 15px;*/
+    height:2em;
 }
 
 formly-field-ui-select-multiple > .ui-select-match>span{
@@ -1846,6 +1847,7 @@ border-color: rgba(250, 251, 252, 0);
 .no-access-msg{
     padding-top:8%;
 }
+
 
 /*.ui-select-bootstrap > .ui-select-choices {
     position: fixed;
