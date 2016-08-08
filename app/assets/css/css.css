@@ -876,6 +876,7 @@ li.nav-7 {
     position: absolute;
     z-index: 10;
         width: 82%;
+            overflow-y: scroll;
 }
 
 .form h2{
@@ -1738,7 +1739,7 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
 
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search{
     /*padding-top: 15px;*/
-    height:2em;
+   max-height:2em;
 }
 
 formly-field-ui-select-multiple > .ui-select-match>span{
