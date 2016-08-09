@@ -1069,7 +1069,7 @@ overflow: hidden;
 
     .radio.ng-scope input[type=radio] {
         width: 15px !important;
-        margin: -5px -22px !important;
+        margin: 1px -22px !important;
     }
 
 .radio-group label.ng-binding {
@@ -1783,13 +1783,12 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
     border: 0.8px solid grey;*/
 }
 
-.ui-select-multiple.ui-select-bootstrap input.ui-select-search{
-    /*padding-top: 15px;*/
-   max-height:2em;
-   /*height:0 !important;*/
-padding-bottom: 0 !important;
+/*.ui-select-multiple.ui-select-bootstrap input.ui-select-search{
+    padding-top: 15px;
+   max-height:2.2em;
+padding-bottom: 2px !important;
 
-}
+}*/
 
 formly-field-ui-select-multiple > .ui-select-match>span{
     background-color: #ccc;
