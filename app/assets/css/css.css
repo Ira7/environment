@@ -758,8 +758,8 @@ li.nav-7 {
     height: 36px;
     display: inline-block;
     float: left;
-    margin-right: 14px;
-    margin-left: 38px;
+    /*margin-right: 14px;
+    margin-left: 38px;*/
     cursor: pointer;
 }
 
@@ -1787,7 +1787,6 @@ span .btn-primary, .btn-primary:hover, .btn, .btn:hover {
    max-height:2em;
    /*height:0 !important;*/
 padding-bottom: 0 !important;
-
 
 }
 
