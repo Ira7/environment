@@ -7,8 +7,10 @@
     font-weight:bold;
 }
 .formly-field {
-  margin-bottom: 16px;
-}
+  /*margin-bottom: 16px;*/
+ margin-bottom: 0; 
+}    
+
 
 .validation {
   color: #a94442;
