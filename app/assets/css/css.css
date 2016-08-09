@@ -345,6 +345,7 @@ header h2.high {
             box-sizing: border-box;
             padding: 12px 0;
             text-align: right;
+            min-width: 14%;
         }
 
         header h2.high .sub_nav h3 {
@@ -550,8 +551,11 @@ li.active-nav-1:hover h3, li.active-nav-2:hover h3, li.active-nav-3:hover h3, li
 }
 
 li.nav-1 {
-    background: url(../icons/nav_01_off.png) no-repeat 54px center;
-    padding-right: 22px !important;
+    /*background: url(../icons/nav_01_off.png) no-repeat 54px center;
+    padding-right: 22px !important;*/
+
+  background: url(../icons/nav_01_off.png) no-repeat  90%;
+    padding-right: 2% !important;
 }
 
     /*li.nav-1:hover {
@@ -560,15 +564,21 @@ li.nav-1 {
     }*/
 
     li.nav-1.active-nav-1 {
-        background: url(../icons/nav_01_on.png) no-repeat 54px center;
-        padding-right: 22px !important;
-        background-color: #eff3f6 !important;
-        color: #534540 !important;
+        /*background: url(../icons/nav_01_on.png) no-repeat 54px center;
+        padding-right: 22px !important;*/
+
+background: url(../icons/nav_01_on.png) no-repeat 90%;
+    padding-right: 2% !important;
+    background-color: #eff3f6 !important;
+    color: #534540 !important;
     }
 
 li.nav-2 {
-    background: url(../icons/nav_02_off.png) no-repeat 124px center;
-    padding-right: 18px !important;
+    /*background: url(../icons/nav_02_off.png) no-repeat 124px center;
+    padding-right: 18px !important;*/
+
+        background: url(../icons/nav_02_off.png) no-repeat 90%;
+    padding-right: 2% !important;
 }
 
     /*li.nav-2:hover {
@@ -577,15 +587,20 @@ li.nav-2 {
     }*/
 
     li.nav-2.active-nav-2 {
-        background: url(../icons/nav_02_on.png) no-repeat 124px center;
-        padding-right: 18px !important;
+        /*background: url(../icons/nav_02_on.png) no-repeat 124px center;
+        padding-right: 18px !important;*/
+        background: url(../icons/nav_02_on.png) no-repeat 90%;
+    padding-right: 2% !important;
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }
 
 li.nav-3 {
-    background: url(../icons/nav_03_off.png) no-repeat 134px center;
-    padding-right: 32px !important;
+    /*background: url(../icons/nav_03_off.png) no-repeat 134px center;
+    padding-right: 32px !important;*/
+
+     background: url(../icons/nav_03_off.png) no-repeat 90%;
+    padding-right: 2% !important;
 }
 
     /*li.nav-3:hover {
@@ -594,15 +609,21 @@ li.nav-3 {
     }*/
 
     li.nav-3.active-nav-3 {
-        background: url(../icons/nav_03_on.png) no-repeat 134px center;
-        padding-right: 32px !important;
+        /*background: url(../icons/nav_03_on.png) no-repeat 134px center;
+        padding-right: 32px !important;*/
+  background: url(../icons/nav_03_on.png) no-repeat 90%;
+    padding-right: 2% !important;
+
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }
 
 li.nav-4 {
-    background: url(../icons/nav_04_off.png) no-repeat 119px center;
-    padding-right: 22px !important;
+    /*background: url(../icons/nav_04_off.png) no-repeat 119px center;
+    padding-right: 22px !important;*/
+
+        background: url(../icons/nav_04_off.png) no-repeat 90%;
+    padding-right: 2% !important;
 }
 
     /*li.nav-4:hover {
@@ -611,16 +632,22 @@ li.nav-4 {
     }*/
 
     li.nav-4.active-nav-4 {
-        background: url(../icons/nav_04_on.png) no-repeat 119px center;
-        padding-right: 22px !important;
+        /*background: url(../icons/nav_04_on.png) no-repeat 119px center;
+        padding-right: 22px !important;*/
+
+          background: url(../icons/nav_04_on.png) no-repeat 90%;
+    padding-right: 2% !important;
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }
 
 
 li.nav-5 {
-    background: url(../icons/nav_05_off.png) no-repeat 129px center;
-    padding-right: 32px !important;
+    /*background: url(../icons/nav_05_off.png) no-repeat 129px center;
+    padding-right: 32px !important;*/
+
+       background: url(../icons/nav_05_off.png) no-repeat 90%;
+    padding-right: 3% !important;
 }
 
     /*li.nav-5:hover {
@@ -629,8 +656,10 @@ li.nav-5 {
     }*/
 
     li.nav-5.active-nav-5 {
-        background: url(../icons/nav_05_on.png) no-repeat 129px center;
-        padding-right: 32px !important;
+        /*background: url(../icons/nav_05_on.png) no-repeat 129px center;
+        padding-right: 32px !important;*/
+         background: url(../icons/nav_05_on.png) no-repeat 90%;
+    padding-right: 3% !important;
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }
@@ -645,8 +674,11 @@ li.active-nav-1 h3, li.active-nav-2 h3, li.active-nav-3 h3, li.active-nav-4 h3, 
 
 
 li.nav-6 {
-    background: url(../icons/nav_06_off.png) no-repeat 80px center;
-    padding-right: 32px !important;
+    /*background: url(../icons/nav_06_off.png) no-repeat 80px center;
+    padding-right: 32px !important;*/
+
+     background: url(../icons/nav_06_off.png) no-repeat 90%;
+    padding-right: 3% !important;
 }
 
     /*li.nav-6:hover {
@@ -655,15 +687,21 @@ li.nav-6 {
     }*/
 
     li.nav-6.active-nav-6 {
-        background: url(../icons/nav_06_on.png) no-repeat 80px center;
-        padding-right: 32px !important;
+        /*background: url(../icons/nav_06_on.png) no-repeat 80px center;
+        padding-right: 32px !important;*/
+
+          background: url(../icons/nav_06_on.png) no-repeat 90%;
+    padding-right: 3% !important;
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }
 
 li.nav-7 {
-    background: url(../icons/nav_07_off.png) no-repeat 86px center;
-    padding-right: 42px !important;
+    /*background: url(../icons/nav_07_off.png) no-repeat 86px center;
+    padding-right: 42px !important;*/
+
+     background: url(../icons/nav_07_off.png) no-repeat 90%;
+    padding-right: 3% !important;
 }
 
     /*li.nav-7:hover {
@@ -672,8 +710,13 @@ li.nav-7 {
     }*/
 
     li.nav-7.active-nav-7 {
-        background: url(../icons/nav_07_on.png) no-repeat 86px center;
-        padding-right: 42px !important;
+        /*background: url(../icons/nav_07_on.png) no-repeat 86px center;
+        padding-right: 42px !important;*/
+
+        
+     background: url(../icons/nav_07_on.png) no-repeat 90%;
+    padding-right: 3% !important;
+
         background-color: #eff3f6 !important;
         color: #534540 !important;
     }

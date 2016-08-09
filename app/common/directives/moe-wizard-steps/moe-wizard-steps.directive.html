@@ -44,9 +44,9 @@
         </ul>
     </nav>-->
 <div class="col-xs-10 col-xs-offset-1">
-            <nav class="sub_nav">
+            <nav class="sub_nav row">
                 <ul >
-                    <li ng-repeat="step in ::vm.steps  track by $index" class="nav-{{$index + 1}}" ng-class="{'active-nav-{{$index + 1}}': step === vm.step}" ng-click="vm.stepSelected(step)"><h3><pre>{{step.stepTitle}}</pre></h3></li>
+                    <li ng-repeat="step in ::vm.steps  track by $index" class="nav-{{$index + 1}} col-xs-1 img-responsive" ng-class="{'active-nav-{{$index + 1}}': step === vm.step}" ng-click="vm.stepSelected(step)"><h3><pre>{{step.stepTitle}}</pre></h3></li>
                 </ul>
             </nav>
 </div>
