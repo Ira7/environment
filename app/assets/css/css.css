@@ -373,6 +373,13 @@ header h2.high {
         header h2.high .sub_nav li:hover pre {
             border-bottom: 1px solid #f89d34;
             border-radius: 0;
+              width:80%;
+        }
+
+           header h2.high .sub_nav li.nav-1:hover pre {
+               width:30%;
+            border-bottom: 1px solid #f89d34;
+            border-radius: 0;
         }
 
 
@@ -987,13 +994,33 @@ li.nav-7 {
       font-weight: 900;
 }*/
 
-.package-type .ui-select-container{
+/*.package-type .ui-select-container{
+     border-bottom: 2px solid #d9d5cf !important;
+     border-radius:0;
+     
+         padding: 1px 2px 1px 3px!important;
+    min-height: 2.5em;
+    width: 100%;
+  
+}*/
+
+
+
+/*.package-type .ui-select-container input{
      border-bottom: 2px solid #d9d5cf !important;
      border-radius:0;
      height: 2.5em;
-  
-}
+   width: 10% !important;
+} */
 
+/*.ui-select-multiple.ui-select-bootstrap input.ui-select-search {
+    background-color: pink !important;
+    border: none;
+    outline: none;
+    height: 1.666666em;
+    margin-bottom: 0 !important;
+ 
+}*/
 
 .form input, .form input:focus {
       border: 0 none;
@@ -1093,25 +1120,57 @@ overflow: hidden;
         color:#ccc;
 }
 
-
+/*
 .formly-field {
     margin-bottom: 0;
-}
+}*/
 
 .general-form .ui-select-multiple.ui-select-bootstrap {
    border: 1px solid #eee;
     box-shadow:none!important;
         padding: 1px 2px 1px 3px!important;
-            height: 2.2em;
+            min-height: 2.5em;
             width: 100%;
 
 }
 
 .ui-select-multiple.ui-select-bootstrap{
-    border:none;
+   border-radius: 0;
       box-shadow:none;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      border-bottom: 2px solid #d9d5cf;
+       /*max-height: 2.5em;*/
+   /*border: 1px solid #eee;
+   box-shadow:none!important;
+   padding: 1px 2px 1px 3px!important;
+   width: 100%;*/
+
 }
 
+/*.package-type{
+    background-color: lightyellow;
+}*/
+/*.package-type .ui-select-multiple.ui-select-bootstrap{
+    background-color: deeppink;
+}*/
+.package-type .ui-select-multiple.ui-select-bootstrap>div{
+    /*background-color: limegreen;
+    min-width: 90%;
+    border-bottom: 2px solid #d9d5cf !important;*/
+      /*max-height: 2.2em;*/
+}
+
+.package-type .ui-select-multiple.ui-select-bootstrap>div>input{ 
+    width:130px !important;
+    margin-bottom: 0 !important;
+}
+
+.multi-field .ui-select-multiple.ui-select-bootstrap>div>input{ 
+    width:30px !important;
+    margin-bottom: 0 !important;
+}
 
 
 .form .cols {
@@ -1919,6 +1978,10 @@ border-color: rgba(250, 251, 252, 0);
     padding-top:8%;
 }
 
+
+.hidden-field{
+    display:none;
+}
 
 /*.ui-select-bootstrap > .ui-select-choices {
     position: fixed;
