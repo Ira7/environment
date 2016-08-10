@@ -961,6 +961,7 @@ li.nav-7 {
     border-radius: 0 !important;
     padding-right: 0;
     font-family: almoni-dl-aaa-300;
+    padding-bottom: 31px;
 }
 
     .ui-select-bootstrap > .ui-select-match > .btn, .ui-select-bootstrap > .ui-select-match > .btn:hover {
@@ -969,6 +970,7 @@ li.nav-7 {
         text-align: right !important;
         width:100%;
         outline: none;
+        padding-bottom: 31px;
     }
 
 
@@ -980,32 +982,33 @@ li.nav-7 {
     box-shadow: none !important;
     padding-right: 0 !important;
 }
-.form{
+/*.form{
       font-weight: 900;
-}
-.form input, .form input:focus {
-    border-left:none !important;
-     border-right:none !important;
-      border-top:none !important;
-    /*border-bottom: 1px solid #4b5657;*/
+}*/
+
+.package-type .ui-select-container{
      border-bottom: 2px solid #d9d5cf !important;
-    /*height: 34px !important;*/
-    padding-bottom: 13px !important;
-    padding-right: 0;
-    clear: both !important;
-    /*color: #a0a7b1 !important;*/
-    color: #262626!important;
-    font-weight: 900;
-    font-size: 18px !important;
-    display: block !important;
-    width: 100% !important;
-    border-radius: 0 !important;
-    direction: rtl !important;
-    font-family: almoni-dl-aaa-300;
+     border-radius:0;
+    /*background-color: lawngreen;*/
+}
+
+
+.form input, .form input:focus {
+      border: 0 none;
+    /*border-bottom: 1px solid #4b5657;*/
+    border-bottom: 2px solid #d9d5cf;
+    font-size: 18px;
+
+    color: #414f64;
+    background-color: transparent;
+    width: 100%;
+    /*padding-bottom: 12px;*/
+    box-sizing: border-box;
     box-shadow: none;
+    border-radius: 0;
     outline: none;
-        overflow: hidden;
-    text-overflow: ellipsis;
+    padding-right: 0;
+    text-align: right;
 }
 .arr-l{
     display: none;
@@ -1067,9 +1070,14 @@ overflow: hidden;
         /*min-height: 30px;*/
     }
 
-    .radio.ng-scope input[type=radio] {
+    .radio input[type=radio] {
         width: 15px !important;
         margin: 1px -22px !important;
+    }
+
+   .form .radio input[type=radio] {
+        width: 15px !important;
+        margin: 5px -22px !important;
     }
 
 .radio-group label.ng-binding {
@@ -1079,7 +1087,7 @@ overflow: hidden;
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     background: none;
     /*border-bottom: 1px solid rgba(75,86,87,0.65);*/
-        border-bottom: 1px solid #ccc;
+        border-bottom: 2px solid #ccc;
         color:#ccc;
 }
 
@@ -1150,6 +1158,7 @@ overflow: hidden;
     right: 2px;
     /*color: #ff0000;*/
     padding: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /*.has-error .control-label {
