@@ -919,8 +919,9 @@ li.nav-7 {
     border-radius: 4px;
     position: absolute;
     z-index: 10;
-        width: 82%;
-            overflow-y: scroll;
+    width: 85%;
+    overflow-y: scroll;
+
 }
 
 .form h2{
@@ -961,7 +962,7 @@ li.nav-7 {
     border-radius: 0 !important;
     padding-right: 0;
     font-family: almoni-dl-aaa-300;
-    padding-bottom: 31px;
+  
 }
 
     .ui-select-bootstrap > .ui-select-match > .btn, .ui-select-bootstrap > .ui-select-match > .btn:hover {
@@ -970,7 +971,7 @@ li.nav-7 {
         text-align: right !important;
         width:100%;
         outline: none;
-        padding-bottom: 31px;
+     
     }
 
 
@@ -989,7 +990,8 @@ li.nav-7 {
 .package-type .ui-select-container{
      border-bottom: 2px solid #d9d5cf !important;
      border-radius:0;
-    /*background-color: lawngreen;*/
+     height: 2.5em;
+  
 }
 
 
