@@ -1281,7 +1281,7 @@ overflow: hidden;
 
 
         display: block;
-        margin-bottom: 0;
+        /*margin-bottom: 0;*/
         width: 60%;
         border-radius: 4px;
         margin-bottom:2%;
@@ -1332,18 +1332,19 @@ border-color: rgba(250, 251, 252, 0);
 
 
     .general-form .formly-field-group:first-child {
-        margin-top: 52px;
-        background-color: #fff !important;
-        margin-bottom: 17px;
+        margin-top: 5%;
+        /*background-color: #fff !important;
+        margin-bottom: 17px;*/
     }
 
-    .general-form .formly-field-datepicker {
+    /*.general-form .formly-field-datepicker {
         margin-top: 17px;
-    }
+        
+    }*/
 
-    .general-form .formly-field:last-child {
+    /*.general-form .formly-field:last-child {
         margin-bottom: 29px;
-    }
+    }*/
     .general-form .row {
         margin:0;
     }
