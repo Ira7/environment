@@ -1163,7 +1163,8 @@ overflow: hidden;
 }
 
 .package-type .ui-select-multiple.ui-select-bootstrap>div>input{ 
-    width:130px !important;
+    /*width:130px !important;*/
+    width:30px !important;
     margin-bottom: 0 !important;
 }
 
