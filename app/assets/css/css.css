@@ -423,8 +423,8 @@ table.zebra, table.zebra_b {
 
 .table-data{
     max-width: 9em;
-    /*overflow: hidden;
-    text-overflow: ellipsis;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
     /*word-break: normal;*/
 }
 
