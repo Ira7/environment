@@ -423,8 +423,8 @@ table.zebra, table.zebra_b {
 
 .table-data{
     max-width: 9em;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
     /*word-break: normal;*/
 }
 
@@ -496,11 +496,13 @@ table.zebra, table.zebra_b {
     table.zebra th, table.zebra td {
         font-family: almoni-dl-aaa-400;
         padding: 0 34px 0 0;
-        text-align: left;
         height: 53px;
         text-align: right;
         vertical-align: middle;
         font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+    text-overflow: ellipsis;
     }
     
 table.zebra tbody tr:nth-child(odd):hover , table.zebra tbody tr:hover{
@@ -529,15 +531,6 @@ table.zebra tbody tr:nth-child(odd):hover , table.zebra tbody tr:hover{
     /*padding-bottom: 12px;*/
 }
 
-table.zebra th, table.zebra td {
-    font-family: almoni-dl-aaa-400;
-    padding: 0 34px 0 0;
-    text-align: left;
-    height: 53px;
-    text-align: right;
-    vertical-align: middle;
-    font-size: 18px;
-}
 
 table.zebra tr:nth-child(odd) {
     background: #eeefef;
