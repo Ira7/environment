@@ -1977,6 +1977,13 @@ border-color: rgba(250, 251, 252, 0);
     display:none;
 }
 
+.environment-sie-name{
+     white-space: nowrap;
+        overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 90%;
+}
+
 /*.ui-select-bootstrap > .ui-select-choices {
     position: fixed;
     z-index: 12;

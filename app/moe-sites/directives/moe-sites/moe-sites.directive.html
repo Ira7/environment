@@ -5,7 +5,7 @@
         <ul class="sites">
             <li ng-repeat="site in vm.list track by $index">
                 <div>
-                    <h3 ng-bind="site.EnvironmentSiteName"></h3>
+                    <h3 class="environment-sie-name" ng-bind="site.EnvironmentSiteName"></h3>
                     <div class="details">
                         <div ng-repeat="item in ::vm.model.siteSchema track by $index">
                            
